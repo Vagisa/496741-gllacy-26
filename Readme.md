@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Вагиза Свидченкова](https://up.htmlacademy.ru/htmlcss/26/user/496741).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Прусаков](https://htmlacademy.ru/profile/hikikomori).
 
 ---
 
