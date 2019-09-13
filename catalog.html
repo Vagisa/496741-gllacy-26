@@ -28,15 +28,70 @@
               </li>
             </ul>
           </nav>
+        </header>
+        <main>
+          <h1>Каталог</h1>
+          <nav>
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="ice-cream.html">Сливочное</a></li>
+            </ul>
+          </nav>
           <div>
             <p>С 10 до 20, ежедневно</p>
             <span>8 812 450-25-25</span>
           </div>
-        </header>
-        <main>
-          <h1>Каталог</h1>
           <section>
             <h2>Сливочное мороженое</h2>
+            <form action="" method="POST">
+              <fieldset>
+                <legend>Сортировка:</legend>
+                <select name="sorting">
+                  <option value="by-popularity">по популярности</option>
+                  <option value="price-increase">по возрастанию цены</option>
+                  <option value="price-decrease">по убыванию цены</option>
+                </select>
+              </fieldset>
+              <fieldset>
+                <legend>Цена: 100 руб - 500 руб.</legend>
+                <input type="range" min="100" max="500">
+              </fieldset>
+              <fieldset>
+                <legend>Жирность</legend>
+                <label>
+                  <input type="radio" name="fat-content" value="0%"> 0%
+                </label>
+                <label>
+                  <input type="radio" name="fat-content" value="to-10%"> до 10%
+                </label>
+                <label>
+                  <input type="radio" name="fat-content" value="to-30%"> до 30%
+                </label>
+                <label>
+                  <input type="radio" name="fat-content" value="from-30%"> выше 30%
+                </label>
+              </fieldset>
+              <fieldset>
+                <legend>Наполнители:</legend>
+                <label>
+                  <input type="checkbox" name="chocolate"> шоколадные
+                </label>
+                <label>
+                  <input type="checkbox" name="sugar-powders"> сахарные присыпки
+                </label>
+                <label>
+                  <input type="checkbox" name="fruits"> фрукты
+                </label>
+                <label>
+                  <input type="checkbox" name="syrups"> сиропы
+                </label>
+                <label>
+                  <input type="checkbox" name="jams"> джемы
+                </label>
+              </fieldset>
+              <input type="submit" value="Применить">
+            </form>
             <ul>
               <li>
                 <figure>
@@ -184,8 +239,11 @@
               </li>
             </ul>
           </section>
-          
-        
+          <button type="button">1</button>
+          <button type="button">2</button>
+          <button type="button">3</button>
+          <button type="button">4</button>
+          <button type="button">5</button>
         </main>
         <footer>
           <ul>
