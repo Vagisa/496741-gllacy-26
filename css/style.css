@@ -341,7 +341,7 @@ a.basket:focus svg {
     padding: 30px 20px;
     color: #323232;
     background-color: #ffffff;
-    background-image: url(../img/Strawberry-bckg.jpg);
+    background-image: url("../img/Strawberry-bckg.jpg");
     background-position: 20% 40%;
 }
 
@@ -384,7 +384,7 @@ a.basket:focus svg {
     position: relative;
     max-width: 1250px;
     min-height: 430px;
-    background-image: url(../img/Layer-3.jpg);
+    background-image: url("../img/Layer-3.jpg");
     background-position: center;
 }
 
