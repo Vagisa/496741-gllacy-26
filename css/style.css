@@ -313,7 +313,7 @@ a.basket:focus svg {
 
 .advantages {
     max-width: 1146px;
-    height: min-306px;
+    min-height: 306px;
     border-radius: 15px;
     color: #323232;
     background-color: #e8ddc3;
