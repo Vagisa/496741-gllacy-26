@@ -26,14 +26,24 @@ a {
     text-decoration: none;
 }
 
+.pop-up {
+    display: none;
+}
+
 .site-navigation {
     list-style: none;
     line-height: 18px;
 }
 
+.item-site-navigation,
+.item-user-navigation {
+    display: inline-block;
+}
+
 .item-site-navigation > a {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
+
 
 .hover-button {
     width: auto;
@@ -56,7 +66,6 @@ a {
 .hover-button:hover {
     border-radius: 40px;
     background-color: rgb(248, 247, 244);
-    
 }
 
 
@@ -232,6 +241,10 @@ a.basket:focus svg {
     list-style: none;
 }
 
+.stocks li {
+    display: inline-block;
+}
+
 .raspberry,
 .chocolate {
     max-width: 520px;
@@ -365,9 +378,9 @@ a.basket:focus svg {
     min-height: 220px;
     border-radius: 15px;
     color: #5a5a5a;
-    background: repeating-linear-gradient(-45deg, #92cdff, #92cdff 10px,
+    background: repeating-linear-gradient(-45deg, #fe9e90, #fe9e90 10px,
                                                   #f8f7f4 10px, #f8f7f4 20px,
-                                                  #fe9e90 20px, #fe9e90 30px,
+                                                  #92cdff 20px, #92cdff 30px,
                                                   #f8f7f4 30px, #f8f7f4 40px);
     background-position: 20% 40%;
 }
@@ -440,6 +453,31 @@ a.basket:focus svg {
     line-height: 41px;
 }
 
+.filter fieldset {
+    display: inline-block;
+    width: auto;
+    height: 37px;
+    padding: 7px 15px ;
+    vertical-align: middle;
+    border: none;
+    border-radius: 40px;
+    background-color: rgba(248, 247, 244, 0.2);
+    line-height: 18px;
+}
+.filter-button  {
+    color: #ffffff;
+    width: auto;
+    height: 37px;
+    padding: 7px 15px ;
+    vertical-align: middle;
+    border: 1px solid #ffffff;
+    border-radius: 40px;
+    background-color: rgba(248, 247, 244, 0.2);
+    line-height: 18px;
+}
+.filter legend {
+}
+
 .pagination {
     list-style: none;
 }
@@ -496,6 +534,10 @@ a.basket:focus svg {
 .social-network,
 .information {
     list-style: none;
+}
+
+.social-network-item {
+    display: inline-block;
 }
 
 .social-network-item svg {
