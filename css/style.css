@@ -90,7 +90,6 @@ a {
 }
 .user-navigation a {
     position: relative;
-    display: inline-block;
     border-radius: 40px;
     background-color: rgba(255, 255, 255, 0.2);
     text-align: center;
@@ -167,7 +166,6 @@ a.basket:focus svg {
 }
 
 .button {
-    display: inline-block;
     font-size: 18px;
     line-height: 48px;
     font-weight: bold;
@@ -369,7 +367,6 @@ a.basket:focus svg {
 }
 
 .subscription div {
-    display: inline-block;
     max-width: 504px;
     min-height: 140px;
     
@@ -433,7 +430,6 @@ a.basket:focus svg {
 }
 
 .filter fieldset {
-    display: inline-block;
     width: auto;
     height: 37px;
     padding: 7px 15px;
@@ -477,7 +473,6 @@ a.basket:focus svg {
 }
 
 .pagination-item a:focus {
-    display: inline-block;
     width: 27px;
     height: 26px;
     border-radius: 50%;
@@ -486,7 +481,6 @@ a.basket:focus svg {
 }
 
 .this-page a{
-    display: inline-block;
     width: 27px;
     height: 26px;
     border-radius: 50%;
