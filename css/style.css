@@ -35,11 +35,6 @@ a {
     line-height: 18px;
 }
 
-.item-site-navigation,
-.item-user-navigation {
-    display: inline-block;
-}
-
 .item-site-navigation > a {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -98,7 +93,6 @@ a {
     display: inline-block;
     border-radius: 40px;
     background-color: rgba(255, 255, 255, 0.2);
-    vertical-align: middle;
     text-align: center;
 }
 
@@ -216,10 +210,6 @@ a.basket:focus svg {
     list-style: none;
 }
 
-.slider li {
-    display: inline-block;
-}
-
 .slider button{
     width: 21px;
     height: 21px;
@@ -239,10 +229,6 @@ a.basket:focus svg {
 
 .stocks {
     list-style: none;
-}
-
-.stocks li {
-    display: inline-block;
 }
 
 .raspberry,
@@ -275,13 +261,10 @@ a.basket:focus svg {
 }
 
 .product-list {
-    list-style: none;
-    display: inline-block;
-    
+    list-style: none;   
 }
 
 .product-item {
-    display: inline-block;
     width: 323px;
     height: 440px;
     
@@ -438,10 +421,6 @@ a.basket:focus svg {
     font-weight: normal;
 }
 
-.bread-crumbs li {
-    display: inline-block;
-}
-
 .bread-crumbs a{
     color: #ffffff;
     text-decoration: underline;
@@ -457,8 +436,7 @@ a.basket:focus svg {
     display: inline-block;
     width: auto;
     height: 37px;
-    padding: 7px 15px ;
-    vertical-align: middle;
+    padding: 7px 15px;
     border: none;
     border-radius: 40px;
     background-color: rgba(248, 247, 244, 0.2);
@@ -469,7 +447,6 @@ a.basket:focus svg {
     width: auto;
     height: 37px;
     padding: 7px 15px ;
-    vertical-align: middle;
     border: 1px solid #ffffff;
     border-radius: 40px;
     background-color: rgba(248, 247, 244, 0.2);
@@ -483,14 +460,12 @@ a.basket:focus svg {
 }
 
 .pagination-item {
-    display: inline-block;
     width: 27px;
     height: 26px;
     line-height: 25px;
     font-weight: normal;
     border-radius: 50%;
     text-align: center;
-    vertical-align: middle;
 }
 
 .pagination-item a {
@@ -534,10 +509,6 @@ a.basket:focus svg {
 .social-network,
 .information {
     list-style: none;
-}
-
-.social-network-item {
-    display: inline-block;
 }
 
 .social-network-item svg {
