@@ -30,32 +30,41 @@ a {
     display: none;
 }
 
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.main-header {
+    display: flex;
+    height: 120px;
+    flex-direction: column;
+}
+
+.main-navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .site-navigation {
+    display: flex;
     list-style: none;
     line-height: 18px;
+    margin-right: auto;
 }
-
-.item-site-navigation > a {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
 
 .hover-button {
     width: auto;
-    padding: 7px 10px;
-    text-align: center;
+    padding: 6.5px 14px;
+    display: flex;
 }
 
-.hover-button.catalog{
-    width: 67px;
-}
-
-.hover-button.shipping-payment{
-    width: 150px;
-}
-
-.hover-button.about-company{
-    width: 100px;
+.hover-button a {
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    white-space: nowrap;
 }
 
 .hover-button:hover {
@@ -65,20 +74,21 @@ a {
 
 
 .hover-button:hover a{
-    
     color: rgb(50, 50, 50);
 }
 
 .user-navigation {
+    display: flex;
     list-style: none;
     font-size: 14px;
     line-height: 16px;
 }
 
-
-.site-navigation a,
 .user-navigation a {
     color: rgb(255, 255, 255);
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
 }
 
 .item-site-navigation > a:hover,
@@ -88,60 +98,29 @@ a {
     color: rgb(50, 50, 50);
     background-color: rgb(248, 247, 244);
 }
-.user-navigation a {
-    position: relative;
-    border-radius: 40px;
-    background-color: rgba(255, 255, 255, 0.2);
-    text-align: center;
+
+.user-button {
+    display: flex;
+    align-items: center;
+    padding: 6.5px 16px;
+    margin: 5px;
 }
 
-
-.search-line {
-    height: 33px;
-    width: 33px;
+.user-button span {
+    padding-left: 8px;
 }
 
-.login-link {
-    padding-top: 8px;
-    padding-left: 25px;
-    width: 68px;
-    height: 24px;
-}
-
-.basket {
-    padding-top: 8px;
-    padding-left: 25px;
-    width: 75px;
-    height: 24px;
-}
-
-.user-navigation svg {
-    position: absolute;
+.user-button svg {
     fill: #ffffff;
 }
 
-.search-line svg {
-    top: 8px;
-    left: 8px;
-}
-
-.login-link svg {
-    top: 6px;
-    left: 17px;
-}
-
-.basket svg {
-    top: 8px;
-    left: 17px;
-}
-
-a.search-line:hover svg,
-a.search-line:focus svg,
-a.login-link:hover svg,
-a.login-link:focus svg,
-a.basket:hover svg,
-a.basket:focus svg {
+a.user-button:hover svg,
+a.user-button:focus svg {
     fill: #323232;
+}
+
+.working-hours {
+    margin-left: auto;
 }
 
 .working-hours p {
@@ -154,15 +133,45 @@ a.basket:focus svg {
     line-height: 24px;
 }
 
+.best-deal {
+    min-height: 648px;
+}
+
 .best-deal-list {
+    position: relative;
+    top: -152px;
     text-align: center;
     list-style: none;
     
 }
 
 .best-deal-list h3 {
+    max-width: 670px;
     font-size: 60px;
     line-height: 100.5%;
+}
+
+.best-deal-item  img {
+    position: absolute;
+    z-index: -1;
+}
+
+.best-deal-item:not(:first-child) {
+    display: none;
+}
+
+.best-deal-item figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.best-deal-item figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 380px;
 }
 
 .button {
