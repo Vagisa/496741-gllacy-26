@@ -183,7 +183,7 @@
           </li>
         </ul>
       </section>
-      <section class="bestsellers">
+      <section class="bestsellers container">
         <h2 class="visually-hidden">Хиты продаж!</h2>
         <ul class="product-list">
           <li class="product-item">
@@ -248,7 +248,7 @@
           </li>
         </ul>
       </section>
-      <section class="advantages">
+      <section class="advantages container">
         <h2 class="visually-hidden">Преимущества</h2>
         <p>
           Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого 
@@ -263,7 +263,7 @@
               проверенных временем технологий.
             </p>
           </li>
-          <li>
+          <li class="advantages-item">
             <img src="img/leaf.svg" width="49" height="49" alt="Листочек">
             <p>
               Для приготовления мороженого используются настоящие сливки и 
@@ -271,7 +271,7 @@
               добавки произведены из натурального, экологически чистого сырья. 
             </p>
           </li>
-          <li>
+          <li class="advantages-item">
             <img src="img/cow.svg" width="49" height="49" alt="Корова">
             <p>
               Закупка ингредиентов  производится только у проверенных 
@@ -279,7 +279,7 @@
               долговременное сотрудничество.
             </p>
           </li>
-          <li>
+          <li class="advantages-item">
             <img src="img/thermometer.svg" width="49" height="49" alt="Градусник">
             <p>
               Доставка нашего мороженого до заказчиков осуществляется в 
@@ -289,26 +289,29 @@
           </li>
         </ul>
       </section>
-      <article class="advertising">
-        <h2>Новое в нашем блоге</h2>
-        <a href="#" aria-label="Переход на сторонний сайт">
-          10 способов сервировки <br>фруктовых щербетов к <br>столу
-        </a>
-      </article>
-      <section class="subscription">
-        <div>
-          <h2 class="visually-hidden">Подписка</h2>
-          <p>
-            Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего 
-            самого вкусного, что у нас происходит. Обещаем не спамить и не слать 
-            всякой ненужной ерунды. Честно =) 
-          </p>
-          <form action="https://echo.htmlacademy.ru" method="POST">
-            <input type="email" name="email" placeholder="email@example.com">
-            <button class="button" type="submit">Отправить</button>
-          </form>
-        </div>
-      </section>
+      <div class="one-row container">
+        <article class="advertising">
+          <h2>Новое в нашем блоге</h2>
+          <a href="#" aria-label="Переход на сторонний сайт">
+            10 способов сервировки <br>фруктовых щербетов к <br>столу
+          </a>
+        </article>
+        <section class="subscription">
+          <div class="border-bgr">
+            <h2 class="visually-hidden">Подписка</h2>
+            <p>
+              Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего 
+              самого вкусного, что у нас происходит. Обещаем не спамить и не слать 
+              всякой ненужной ерунды. Честно =) 
+            </p>
+            <form  class="one-row" action="https://echo.htmlacademy.ru" method="POST">
+              <input type="email" name="email" placeholder="email@example.com">
+              <button class="button" type="submit">Отправить</button>
+            </form>
+          </div>
+        </section>
+      </div>
+      
       <section class="contacts">
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <div>
@@ -327,11 +330,10 @@
             (с 10 до 20 ежедневно)
           </p>
           <a class="button" href="#" aria-label="Обратная связь">Форма обратной связи</a>
-        </div>
-        
+        </div> 
       </section> 
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <ul class="social-network">
         <li class="social-network-item">
           <a href="https://twitter.com" aria-label="Глейси в Твиттере">
@@ -390,31 +392,32 @@
           </a>
         </li>
       </ul>
-      <ul class="information">
-        <li>
-          <a href="#" aria-label="Информация для поставщиков">
-            <img src="img/heart.svg" width="15" height="13" alt="Сердечко">
-            <b>Для поставщиков</b>
-          </a>
-        </li>
-        <li>
-          <a href="#" aria-label="О нашем производстве">
-            О производстве
-          </a>
-        </li>
-        <li>
-          <a href="#" aria-label="Наши документы">
-            Наши документы
-          </a>
-        </li>
-        <li>
-          <a href="#" aria-label="Экологические стандарты фирмы">
-            Экологические стандарты
-          </a>
-        </li>
-      </ul>
-        
-      <div>
+      <div class="information">
+        <img src="img/heart.svg" width="15" height="13" alt="Сердечко">
+        <ul>
+          <li>
+            <a href="#" aria-label="Информация для поставщиков">
+              <b>Для поставщиков</b>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="О нашем производстве">
+              О производстве
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Наши документы">
+              Наши документы
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Экологические стандарты фирмы">
+              Экологические стандарты
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
         <a href="https://htmlacademy.ru" aria-label="Сайт HTML Academy">
           <img src="img/logo-htmlacademy.svg" width="108" height="39" 
           alt="Мини-логотип HTML Academy">
