@@ -106,6 +106,10 @@ a {
     margin: 5px;
 }
 
+.item-user-navigation:first-child .user-button {
+    padding: 8px;
+}
+
 .user-button span {
     padding-left: 8px;
 }
@@ -229,6 +233,10 @@ a.user-button:focus svg {
     border-radius: 50%;
     margin: 5px;
 }
+
+.slider-item:first-child button {
+    background-color: rgb(255, 255, 255);
+} 
 
 .slider button:hover {
     background-color: rgba(255, 255, 255, 0.2);
@@ -509,11 +517,14 @@ a.user-button:focus svg {
     line-height: 24px;
 }
 
-.bread-crumbs {
+.bread-crumbs ul {
+    display: flex;
+    justify-content: baseline;
     list-style: none;
     font-size: 14px;
     line-height: 16px;
     font-weight: normal;
+    padding: 0;
 }
 
 .bread-crumbs a{
@@ -522,12 +533,26 @@ a.user-button:focus svg {
     text-decoration-color: rgba(255, 255, 255, 0.2);
 }
 
+.bread-crumbs span {
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
 .page-title {
     font-size: 35px;
     line-height: 41px;
 }
 
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 876px;
+    align-items: center;
+}
+
 .filter fieldset {
+    flex-grow: 1;
+    margin-right: 16px;
     width: auto;
     height: 37px;
     padding: 7px 15px;
@@ -541,6 +566,7 @@ a.user-button:focus svg {
     width: auto;
     height: 37px;
     padding: 7px 15px ;
+    margin-right: 16px;
     border: 1px solid #ffffff;
     border-radius: 40px;
     background-color: rgba(248, 247, 244, 0.2);
@@ -604,6 +630,11 @@ a.user-button:focus svg {
     padding: 0;
 }
 
+.main-footer p {
+    font-size: 12px;
+    font-weight: normal;
+}
+
 .information {
     display: flex;
     align-items: baseline;
@@ -649,11 +680,6 @@ a.user-button:focus svg {
 
 .information a {
     font-size: 13px;
-}
-
-.main-footer p {
-    font-size: 12px;
-    font-weight: normal;
 }
 
 .copyright p {
