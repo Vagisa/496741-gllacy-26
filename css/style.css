@@ -78,6 +78,15 @@ a {
     white-space: nowrap;
 }
 
+.this-page-nav {
+    border-radius: 40px;
+    background-color: rgb(208, 112, 88);
+}
+
+.this-page-nav a {
+    border: none;
+}
+
 .hover-button:hover {
     border-radius: 40px;
     background-color: rgb(248, 247, 244);
@@ -328,15 +337,30 @@ a.user-button:focus svg {
 }
 
 .product-list {
+    box-sizing: border-box;
+    max-width: 1150px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     list-style: none;   
     padding: 0;
     margin: 0;
+    border: 1px solid transparent;
+}
+
+.main-catalog {
+    min-height: 1080px;
+}
+
+.product-item {
+    position: relative;
+    width: 25%;
+    min-width: 267px;
+    min-height: 351.5px;
 }
 
 .product-item a {
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -346,10 +370,11 @@ a.user-button:focus svg {
     margin: auto;
 }
 
-.product-item:hover {
+.product-item a:hover {
     border-radius: 5px;
     background-color: rgba(248, 247, 244, 0.2);
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+    z-index: 1;
 }
 
 .product-item figure {
@@ -364,6 +389,7 @@ a.user-button:focus svg {
 .product-item .button{
     display: none;
     margin-bottom: 22px;
+    
 }
 
 .product-item:hover .button {
@@ -398,7 +424,7 @@ a.user-button:focus svg {
     text-align: center;
     text-decoration: underline;
     text-decoration-color:  rgba(255, 255, 255, 0.2);
-    margin-top: 16px;
+    margin-top: 13px;
     margin-right: 10px;
     margin-left: 10px;
     margin-bottom: 20px;
@@ -529,7 +555,6 @@ a.user-button:focus svg {
     max-width: 1200px;
     margin: 40px auto 5px;
     padding: 0;
-    /*position: relative;*/
     min-height: 430px;
     background-image: url("../img/Layer-3.jpg");
     background-position: center;
@@ -582,8 +607,6 @@ a.user-button:focus svg {
 
 .bread-crumbs a{
     color: #ffffff;
-    /*text-decoration: underline;
-    text-decoration-color: rgba(255, 255, 255, 0.2);*/
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -630,19 +653,30 @@ a.user-button:focus svg {
 }
 
 .pagination {
+    margin-top: 45px;
+    display: flex;
+    justify-content: flex-end;
     list-style: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 30px;
 }
 
 .pagination-item {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 27px;
     height: 26px;
-    line-height: 25px;
     font-weight: normal;
     border-radius: 50%;
-    text-align: center;
+}
+
+.pagination-item:first-child a {
+    color: rgba(255, 255, 255, 0.2);
 }
 
 .pagination-item a {
+    font-weight: bold;
     color: #ffffff;
 }
 
@@ -658,27 +692,25 @@ a.user-button:focus svg {
     background-color: #ffffff;
 }
 
-.this-page a{
-    width: 27px;
-    height: 26px;
-    border-radius: 50%;
-    color: #353535;
+.this-page {
     background-color: #ffffff;
 }
 
+.this-page a {
+    color: #353535;
+}
+
 .main-footer {
-    min-height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 100px;
 }
 
 .main-footer a {
     color: #ffffff;
     line-height: 18px;
     font-weight: normal;
-    text-decoration: underline;
-    text-decoration-color: rgba(255, 255, 255, 0.2);
 }
 
 .main-footer ul {
@@ -691,36 +723,20 @@ a.user-button:focus svg {
     font-weight: normal;
 }
 
-.information {
-    display: flex;
-    align-items: baseline;
-}
-
-.information img {
-    margin-right: 6px;
-}
-.information ul {
-    column-count: 2;
-}
-
 .social-network {
     display: flex;
+    width: 184px;
+    justify-content: space-between;
 }
 
 .social-network-item {
     display: flex;
-    margin-left: 5px;
-    margin-right: 5px;
     align-items: center;
-}
-
-.social-network-item:first-child {
-    margin-left: 0;
 }
 
 .social-network-item svg {
     fill: rgba(255, 255, 255, 0.9);
-    border: 3px solid rgba(255, 255, 255, 0.502);
+    border: 2px solid rgba(255, 255, 255, 0.502);
     border-radius: 50%;
 }
 
@@ -734,10 +750,39 @@ a.user-button:focus svg {
     border-color: rgba(255, 255, 255, 0.702);
 }
 
+.information { 
+    display: flex;
+    align-items: baseline;
+    min-width: 330px;
+}
+
+.information a {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.information img {
+    margin-right: 6px;
+}
+.information ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 50px;
+}
+
+.information li {
+    min-width: 145px;
+}
+
 .information a {
     font-size: 13px;
 }
 
 .copyright p {
     margin: 0;
+}
+
+.copyright a {
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.2);
 }
