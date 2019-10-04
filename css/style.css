@@ -46,13 +46,24 @@ a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 9px;
 }
 
+.main-navigation ul {
+    padding-left: 0;
+}
+
+.main-navigation-logo {
+    height: 64px;
+}
 .site-navigation {
     display: flex;
     list-style: none;
     line-height: 18px;
+    margin-top: 14px;
+    margin-left: 10px;
     margin-right: auto;
+    font-weight: 500;
 }
 
 .hover-button {
@@ -82,6 +93,7 @@ a {
     list-style: none;
     font-size: 14px;
     line-height: 16px;
+    font-weight: 200;
 }
 
 .user-navigation a {
@@ -103,11 +115,16 @@ a {
     display: flex;
     align-items: center;
     padding: 6.5px 16px;
-    margin: 5px;
+    margin: 0 5px;
 }
 
 .item-user-navigation:first-child .user-button {
     padding: 8px;
+    margin-left: 0;
+}
+
+.item-user-navigation:last-child .user-button {
+    margin-right: 0;
 }
 
 .user-button span {
@@ -126,13 +143,15 @@ a.user-button:focus svg {
 .working-hours {
     height: 40px;
     margin-left: auto; padding-bottom: 1px;
+    font-weight: 500;
 }
 
 .working-hours p {
     font-size: 14px;
     line-height: 16px;
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
+    text-align: right;
 }
 
 .working-hours span {
@@ -144,11 +163,13 @@ a.user-button:focus svg {
     flex-direction: column;
     min-height: 500px;
     justify-content: space-between;
+    margin-bottom: 28px;
 }
 
 .best-deal-list {
     position: relative;
     top: -152px;
+    left: -20px;
     text-align: center;
     list-style: none;
 }
@@ -157,7 +178,7 @@ a.user-button:focus svg {
     max-width: 670px;
     font-size: 60px;
     line-height: 100.5%;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .best-deal-item  img {
@@ -180,7 +201,7 @@ a.user-button:focus svg {
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 332px;
+    top: 348px;
 }
 
 .button {
@@ -223,6 +244,7 @@ a.user-button:focus svg {
     list-style: none;
     justify-content: baseline;
     padding: 0;
+    margin-bottom: 25px;
 }
 
 .slider button{
@@ -256,9 +278,9 @@ a.user-button:focus svg {
 .stocks li {
     display: flex;
     flex-direction: column;
-    max-width: 520px;
+    max-width: 524px;
     min-height: 184px;
-    padding: 23px 20px;
+    padding: 25px 18px 20px;
     border-radius: 15px;
     background-color: #8e0220;
     background-repeat: no-repeat;
@@ -266,11 +288,23 @@ a.user-button:focus svg {
 
 .raspberry {
     background-image: url("../img/Raspberry-bckg.jpg");
+    background-position: -50px -94px;
+}
+
+.raspberry  .button {
+    padding: 12px 23px;
 }
 
 .chocolate {
     background-image: url("../img/Chocolate-bckg.jpg");
+    background-position: -220px -105px;
 }
+
+.chocolate  .button {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
 .stocks h3 {
     font-size: 35px;
     margin: 0;
@@ -279,8 +313,9 @@ a.user-button:focus svg {
 .stocks p {
     font-size: 18px;
     font-weight: 500;
-    margin-top: 30px;
-    margin-bottom: 48px;
+    margin-top: 25px;
+    margin-bottom: 45px;
+    padding-right: 8px;
 }
 
 .stocks .button {
@@ -340,8 +375,8 @@ a.user-button:focus svg {
 
 .product-list img:nth-child(2) {
     position: absolute; 
-    top: 0;
-    left: 27px;
+    top: 6px;
+    left: 10px;
     z-index: 1;
 }
 
@@ -357,11 +392,15 @@ a.user-button:focus svg {
 }
 
 .product-item h3 {
+    font-size: 16px;
+    line-height: 22px;
     font-weight: 300;
     text-align: center;
     text-decoration: underline;
     text-decoration-color:  rgba(255, 255, 255, 0.2);
     margin-top: 16px;
+    margin-right: 10px;
+    margin-left: 10px;
     margin-bottom: 20px;
 }
 
@@ -388,12 +427,18 @@ a.user-button:focus svg {
 }
 
 .advantages-item img {
-    margin-right: 10px;
+    margin-right: 7px;
 }
+
+.advantages-item p {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
 
 .advantages > p {
     margin-top: 0;
-    margin-bottom: 14px;
+    margin-bottom: 9px;
     font-size: 24px;
     line-height: 30px;
     font-weight: 500;
@@ -401,6 +446,7 @@ a.user-button:focus svg {
 
 .advantages ul {
     list-style: none;
+    margin: 0;
 }
 
 .one-row {
@@ -517,9 +563,16 @@ a.user-button:focus svg {
     line-height: 24px;
 }
 
+.bread-crumbs {
+    position: relative;
+    background-color: #8e0220;
+}
+
 .bread-crumbs ul {
+    position: absolute;
     display: flex;
     justify-content: baseline;
+    top: -32px;
     list-style: none;
     font-size: 14px;
     line-height: 16px;
@@ -529,8 +582,9 @@ a.user-button:focus svg {
 
 .bread-crumbs a{
     color: #ffffff;
-    text-decoration: underline;
-    text-decoration-color: rgba(255, 255, 255, 0.2);
+    /*text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.2);*/
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .bread-crumbs span {
@@ -539,6 +593,7 @@ a.user-button:focus svg {
 }
 
 .page-title {
+    margin-top: 5px;
     font-size: 35px;
     line-height: 41px;
 }
@@ -547,7 +602,9 @@ a.user-button:focus svg {
     display: flex;
     flex-wrap: wrap;
     max-width: 876px;
+    min-height: 140px;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .filter fieldset {
@@ -561,16 +618,15 @@ a.user-button:focus svg {
     background-color: rgba(248, 247, 244, 0.2);
     line-height: 18px;
 }
+
 .filter-button  {
     color: #ffffff;
-    width: auto;
     height: 37px;
-    padding: 7px 15px ;
+    padding: 7px 15px;
     margin-right: 16px;
     border: 1px solid #ffffff;
     border-radius: 40px;
     background-color: rgba(248, 247, 244, 0.2);
-    line-height: 18px;
 }
 
 .pagination {
