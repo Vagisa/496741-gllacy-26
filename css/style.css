@@ -443,13 +443,15 @@ a.user-button:focus svg {
 }
 
 .advantages ul {
+    display: flex;
     padding: 0;
-    column-width: 530px;
-    column-gap: 40px;
+    flex-wrap: wrap;
+    align-content: space-between;
 }
 
 .advantages-item {
     display: flex;
+    width: 535px;
 }
 
 .advantages-item img {
