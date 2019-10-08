@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-  
     font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 22px;
@@ -31,9 +30,9 @@ a {
 }
 
 .container {
-    max-width: 1150px;
+    max-width: 1146px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 27px;
 }
 
 .main-header {
@@ -63,7 +62,6 @@ a {
     margin-top: 14px;
     margin-left: 10px;
     margin-right: auto;
-    font-weight: 500;
 }
 
 .hover-button {
@@ -102,7 +100,7 @@ a {
     list-style: none;
     font-size: 14px;
     line-height: 16px;
-    font-weight: 200;
+    font-weight: medium;
 }
 
 .user-navigation a {
@@ -149,10 +147,21 @@ a.user-button:focus svg {
     fill: #323232;
 }
 
+.basket-user-navigation svg:first-child {
+    display: none;
+}
+
+a.basket-user-navigation {
+    color: rgb(50, 50, 50);
+    background-color: rgb(248, 247, 244);
+}
 .working-hours {
     height: 40px;
-    margin-left: auto; padding-bottom: 1px;
-    font-weight: 500;
+    margin-left: auto; 
+    padding-bottom: 1px;
+}
+
+.working-hours-catalog{
 }
 
 .working-hours p {
@@ -165,6 +174,7 @@ a.user-button:focus svg {
 
 .working-hours span {
     font-size: 22px;
+    line-height: 24px;
 }
 
 .best-deal {
@@ -251,14 +261,14 @@ a.user-button:focus svg {
 .slider {
     display: flex;
     list-style: none;
-    justify-content: baseline;
     padding: 0;
-    margin-bottom: 25px;
+    margin-bottom: 31.5px;
+    margin-left: -5px;
 }
 
 .slider button{
-    width: 21px;
-    height: 21px;
+    width: 20px;
+    height: 20px;
     background-color: inherit;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 50%;
@@ -316,12 +326,12 @@ a.user-button:focus svg {
 
 .stocks h3 {
     font-size: 35px;
+    line-height: 41px;
     margin: 0;
 }
 
 .stocks p {
     font-size: 18px;
-    font-weight: 500;
     margin-top: 25px;
     margin-bottom: 45px;
     padding-right: 8px;
@@ -332,25 +342,26 @@ a.user-button:focus svg {
 }
 
 .bestsellers {
-    margin-top: 40px;
-    margin-bottom: 18px;
+    max-width: 1175px;
+    margin: 18px auto;
 }
 
 .product-list {
+    max-width: 1175px;
     box-sizing: border-box;
-    max-width: 1150px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     list-style: none;   
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     border: 1px solid transparent;
 }
 
-.main-catalog {
-    min-height: 1080px;
+.main-catalog .product-list {
+    min-height: 1087px;
 }
+
 
 .product-item {
     position: relative;
@@ -410,7 +421,11 @@ a.user-button:focus svg {
     position: absolute;
     font-size: 45px; 
     top: 180px;
-    left: 27px;
+    left: 11px;
+}
+
+.product-item:last-child p {
+    left: 0;
 }
 
 .product-list span {
@@ -419,14 +434,13 @@ a.user-button:focus svg {
 
 .product-item h3 {
     font-size: 16px;
-    line-height: 22px;
-    font-weight: 300;
+    font-weight: medium;
     text-align: center;
     text-decoration: underline;
     text-decoration-color:  rgba(255, 255, 255, 0.2);
     margin-top: 13px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
     margin-bottom: 20px;
 }
 
@@ -439,7 +453,7 @@ a.user-button:focus svg {
     background-image: url("../img/wafer-bckg.png");
     font-weight: normal;
     padding: 26px 20px 10px;
-    margin-bottom: 40px;
+    margin-bottom: 34px;
 }
 
 .advantages ul {
@@ -494,16 +508,17 @@ a.user-button:focus svg {
 }
 
 .advertising h2 {
+    font-size: 16px;
+    font-weight: medium;
     margin-top: 0;
-    margin-bottom: 13px;
-    font-weight: normal;
+    margin-bottom: 13px;  
 }
 
 .advertising a {
     font-size: 24px;
     line-height: 30px;
     color: #323232;
-    text-decoration: underline;
+    border-bottom: 1px solid #323232;
 }
 
 .subscription {
@@ -545,17 +560,12 @@ a.user-button:focus svg {
     height: 47px;
 }
 
-
-
-
-
-
 .contacts {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     max-width: 1200px;
-    margin: 40px auto 5px;
+    margin: 20px auto 8px;
     padding: 0;
     min-height: 430px;
     background-image: url("../img/Layer-3.jpg");
@@ -580,10 +590,9 @@ a.user-button:focus svg {
     margin-bottom: 26px;
 }
 
-.contacts span {
+.contacts b {
     font-size: 18px;
     line-height: 22px;
-    font-weight: bold;
 }
 
 .contacts span:first-child {
@@ -592,14 +601,12 @@ a.user-button:focus svg {
 
 .bread-crumbs {
     position: relative;
-    background-color: #8e0220;
 }
 
 .bread-crumbs ul {
     position: absolute;
     display: flex;
-    justify-content: baseline;
-    top: -32px;
+    margin-top: -22px;
     list-style: none;
     font-size: 14px;
     line-height: 16px;
@@ -610,6 +617,7 @@ a.user-button:focus svg {
 .bread-crumbs a{
     color: #ffffff;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-right: -4px;
 }
 
 .bread-crumbs span {
@@ -618,7 +626,7 @@ a.user-button:focus svg {
 }
 
 .page-title {
-    margin-top: 5px;
+    margin-top: 0;
     font-size: 35px;
     line-height: 41px;
 }
@@ -629,7 +637,7 @@ a.user-button:focus svg {
     max-width: 876px;
     min-height: 140px;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
 }
 
 .filter fieldset {
@@ -661,6 +669,8 @@ a.user-button:focus svg {
     list-style: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     padding-bottom: 30px;
+    margin-right: 19px;
+    margin-bottom: 7px;
 }
 
 .pagination-item {
@@ -671,6 +681,7 @@ a.user-button:focus svg {
     height: 26px;
     font-weight: normal;
     border-radius: 50%;
+    margin-left: 3px; 
 }
 
 .pagination-item:first-child a {
@@ -756,6 +767,7 @@ a.user-button:focus svg {
     display: flex;
     align-items: baseline;
     min-width: 330px;
+    margin-left: -5px;
 }
 
 .information a {
@@ -773,11 +785,15 @@ a.user-button:focus svg {
 }
 
 .information li {
-    min-width: 145px;
+    min-width: 141px;
 }
 
 .information a {
     font-size: 13px;
+}
+
+.copyright {
+    margin-bottom: 10px;
 }
 
 .copyright p {
