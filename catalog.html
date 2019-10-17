@@ -9,7 +9,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="backlight">
     <header class="main-header container">
       <nav class="main-navigation">
         <a class="main-navigation-logo" href="index.html" aria-label="Главная страница Глейси">
@@ -36,7 +36,7 @@
           </li>
           <li class="item-site-navigation">
             <div class="hover-button">
-                <a href="about-company.html">О компании</a>
+                <a href="about-company.html">О Компании</a>
             </div>
           </li>
         </ul>
@@ -151,7 +151,9 @@
             <span>»</span>
           </li>
           <li>
-            Сливочное
+            <a class="disabled" href="" aria-label="Сливочное мороженое">
+                Сливочное
+            </a>
           </li>
         </ul>
       </nav>
@@ -160,51 +162,57 @@
             <h2 class="page-title">Сливочное мороженое</h2>
             <h3 class="visually-hidden">Фильтр</h3>
             <form class="filter" action="https://echo.htmlacademy.ru" method="GET">
-              <fieldset>
+              <fieldset class="filter-select">
                 <legend>Сортировка:</legend>
-                <select name="sorting">
+                <select class="filter-item filter-item-select" name="sorting">
                   <option value="by-popularity">по популярности</option>
                   <option value="price-increase">сначала недорогие</option>
                   <option value="price-decrease">сначала дорогие</option>
                   <option value="price-decrease">сначала дорогие</option>
                 </select>
               </fieldset>
-              <fieldset>
-                <legend>Цена: 100 руб - 500 руб.</legend>
-                <input type="range" min="100" max="500">
+              <fieldset class="filter-range">
+                <legend>Цена: 100 руб. - 500 руб.</legend>
+                <div class="filter-item">
+                  <input type="range" min="100" max="500">
+                </div>
               </fieldset>
-              <fieldset>
+              <fieldset class="filter-radio">
                 <legend>Жирность</legend>
-                <label>
-                  <input type="radio" name="fat-content" value="0%"> 0%
-                </label>
-                <label>
-                  <input type="radio" name="fat-content" value="to-10%"> до 10%
-                </label>
-                <label>
-                  <input type="radio" name="fat-content" value="to-30%"> до 30%
-                </label>
-                <label>
-                  <input type="radio" name="fat-content" value="from-30%"> выше 30%
-                </label>
+                <div class="filter-item  filter-item-radio">
+                  <input class="visually-hidden filter-input-radio" type="radio" 
+                  name="fat-content" value="0%" id="filter-zero">
+                  <label for="filter-zero">0%</label>
+                  <input class="visually-hidden filter-input-radio" 
+                  type="radio" name="fat-content" value="to-10%" id="filter-ten" checked>
+                  <label for="filter-ten">до 10%</label>
+                  <input class="visually-hidden filter-input-radio" type="radio" 
+                  name="fat-content" value="to-30%" id="filter-thirty">
+                  <label for="filter-thirty">до 30%</label>
+                  <input class="visually-hidden filter-input-radio" type="radio" 
+                  name="fat-content" value="from-30%" id="filter-above-thirty">
+                  <label for="filter-above-thirty">выше 30%</label>
+                </div>
               </fieldset>
-              <fieldset>
+              <fieldset class="filter-checkbox">
                 <legend>Наполнители:</legend>
-                <label>
-                  <input type="checkbox" name="chocolate"> шоколадные
-                </label>
-                <label>
-                  <input type="checkbox" name="sugar-powders"> сахарные присыпки
-                </label>
-                <label>
-                  <input type="checkbox" name="fruits"> фрукты
-                </label>
-                <label>
-                  <input type="checkbox" name="syrups"> сиропы
-                </label>
-                <label>
-                  <input type="checkbox" name="jams"> джемы
-                </label>
+                <div class="filter-item   filter-item-checkbox">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" 
+                  name="chocolate" checked id="filter-chocolate">
+                  <label for="filter-chocolate">шоколадные</label>
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" 
+                  name="sugar-powders" checked id="filter-sugar-powders">
+                  <label for="filter-sugar-powders">сахарные присыпки</label>
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" 
+                  name="fruits" id="filter-fruits">
+                  <label for="filter-fruits">фрукты</label>
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" 
+                  name="syrups" id="filter-syrups">
+                  <label for="filter-syrups">сиропы</label>
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" 
+                  name="jams" id="filter-jams">
+                  <label for="filter-jams">джемы</label>
+                </div>
               </fieldset>
               <button class="filter-button" type="submit">Применить</button>
             </form>

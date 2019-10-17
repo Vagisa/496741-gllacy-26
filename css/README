@@ -4,6 +4,13 @@
 
 Пример структуры файлов:
 
-css/
-| - style.css
-| - [другие *.css файлы]
+
+
+ content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: -3px;
+    left: 0px;
+    border: 4px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
