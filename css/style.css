@@ -46,7 +46,7 @@ a {
 
 .main-header {
     display: flex;
-    height: 120px;
+    min-height: 120px;
     flex-direction: column;
 }
 
@@ -301,9 +301,11 @@ a.basket-user-navigation {
     background-color: rgb(255, 255, 255);
 }
 
+
 .stocks {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     list-style: none;
     padding-left: 0;
     margin-top: -145px;
@@ -361,6 +363,10 @@ a.basket-user-navigation {
 .bestsellers {
     max-width: 1175px;
     margin: 32px auto 17px;
+}
+
+.main-content {
+    min-height: 1320px;
 }
 
 .product-list {
@@ -531,6 +537,7 @@ a.basket-user-navigation {
 .one-row {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .advertising {
     width: 520px;
@@ -653,7 +660,7 @@ a.basket-user-navigation {
 
 .bread-crumbs ul {
     position: absolute;
-    top: -35px;
+    bottom: -8px;
     display: flex;
     list-style: none;
     font-size: 14px;
@@ -852,11 +859,11 @@ a.basket-user-navigation {
 
 .filter-button  {
     width: 145px;
-    height: 37px;
+    height: 35px;
     margin-top: auto;
     margin-right: 0;
     padding: 7px 15px;
-    border: 1px solid #ffffff;
+    border: 2px solid #ffffff;
     border-radius: 40px;
     color: #ffffff;
     background-color: rgba(248, 247, 244, 0.2);
