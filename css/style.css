@@ -703,7 +703,7 @@ a.basket-user-navigation {
 
 .filter fieldset {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     border: none;
     line-height: 18px;
     padding: 0;
@@ -745,12 +745,14 @@ a.basket-user-navigation {
     background-image: url(../img/icon-down-dir.svg);
     background-repeat: no-repeat;
     background-position: 168px center;
-} 
+}
 
 .filter-item-select:hover,
 .filter-item-select:focus {
     color: #323232;
     background-image: url(../img/icon-down-dir-2.svg);
+    background-repeat: no-repeat;
+    background-position: 168px center;
 }
 
 .filter-item-select option {
@@ -791,7 +793,7 @@ a.basket-user-navigation {
     position: absolute;
     width: 4px;
     height: 4px;
-  
+    top: 7px;
     background: #ababab;
     border: 8px solid #ffffff;
     border-radius: 50%;
