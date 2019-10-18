@@ -431,24 +431,18 @@
         </p>
       </div>
     </footer>
-    
-    <section class="pop-up"> 
+    <section class="modal pop-up"> 
       <h2 class="visually-hidden">Обратная связь</h2>
       <p>Мы обязательно вам отетим!</p>
-      <form action="https://echo.htmlacademy.ru" method="POST">
-        <p>
-          <input type="text" name="name" placeholder="Как вас зовут?">
-        </p>
-        <p>
-          <input type="email" name="email" placeholder="Ваша почта для ответа?">
-        </p>
-        <textarea name="comment" cols="40" rows="5">
-          Напишите что-нибудь...
-        </textarea>
-        <p>
+      <form class="modal-form" action="https://echo.htmlacademy.ru" method="POST">
+          <input type="text" name="name" placeholder="Имя Фамилия">
+          <input type="email" name="email" placeholder="email@example.com">
+          <textarea name="comment" cols="40" rows="5" placeholder="В свободной форме"></textarea>
           <button class="button" type="submit">Отправить</button>
-        </p>
-      </form>
+        </form>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </section>
   </body>
 </html>

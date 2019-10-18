@@ -33,10 +33,10 @@ body {
 a {
     text-decoration: none;
 }
-
+/*
 .pop-up {
     display: none;
-}
+}*/
 
 .container {
     max-width: 1146px;
@@ -251,6 +251,7 @@ a.basket-user-navigation {
     text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
     color: rgb(255, 255, 255);
     z-index: 1;
+    cursor: pointer;
 }
 
 .best-deal-list .button {
@@ -1072,4 +1073,99 @@ a.basket-user-navigation {
     height: 39px;
     text-decoration: underline;
     text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+.modal {
+    position: fixed;
+    top: 343px;
+    left: 50%;
+    margin-left: -239px;
+    width: 428px;
+    height: 398px;
+    padding: 15px 25px 30px;
+    border-radius: 10px;
+    color: #323232;
+    background-color: rgb(248, 247, 244);
+    z-index: 2;
+}
+
+.modal p {
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 355px;
+    box-sizing: border-box;
+}
+
+.modal-form input,
+.modal-form textarea {
+    padding: 0;
+    padding-left: 16px;
+    margin: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #999999;
+    border: 1px solid rgb(178, 178, 178);
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.modal-form input {
+    width: 253px;
+    height: 46px;
+}
+
+.modal-form textarea {
+    display: flex;
+    width: 428px;
+    height: 157px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.modal-form button {
+    width: 139px;
+    height: 44px;
+    margin-top: 4px;
+    margin-left: auto;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 7px;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.modal-close::before,
+.modal-close::after {
+    content: "";
+    position: absolute;
+    top: center;
+    right: 10px;
+    width: 22px;
+    height: 3px;
+    background-color: #323232;
+}
+
+.modal-close::before {
+    transform: rotate(45deg);
+}
+
+.modal-close::after {
+    transform: rotate(-45deg);
 }
