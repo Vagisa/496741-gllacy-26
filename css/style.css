@@ -362,7 +362,7 @@ a.basket-user-navigation {
 
 .bestsellers {
     max-width: 1175px;
-    margin: 32px auto 17px;
+    margin: 32px auto 15px;
 }
 
 .main-content {
@@ -378,12 +378,13 @@ a.basket-user-navigation {
     list-style: none;   
     padding: 0;
     padding-left: 5px;
-    margin: 0 auto;
+    margin: 0 auto 0;
     border: 1px solid transparent;
 }
 
 .main-catalog .product-list {
     min-height: 1087px;
+    margin-top: -5px;
 }
 
 
@@ -719,7 +720,7 @@ a.basket-user-navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 37px;
+    height: 36px;
     border: none;
     padding: 0px 15px;
     border-radius: 40px;
@@ -746,15 +747,64 @@ a.basket-user-navigation {
     background-position: 168px center;
 } 
 
-.filter-range legend {
-    padding-left: 15px;
+.filter-item-select:hover,
+.filter-item-select:focus {
+    color: #323232;
+    background-image: url(../img/icon-down-dir-2.svg);
 }
 
-.filter-range input {
-    width: 180px;
+.filter-item-select option {
+    background-color: #ffffff;
+}
+
+.filter-range legend {
+    padding-left: 21px;
+}
+
+.filter-range .filter-item {
     margin-left: 5px;
     margin-right: 5px;
 }
+
+.range-controls {
+    position: relative;
+    padding: 0 22px;
+}
+
+.range-controls .scale {
+    height: 4px;
+    width: 153px;
+    
+    padding-left: 23px;
+    background-color: rgba(248, 247, 244, 0.5);
+}
+
+.range-controls .bar {
+
+    width: 100px;
+    height: 4px;
+    background-color: rgba(248, 247, 244, 1);
+}
+
+.range-toggle {
+    
+    position: absolute;
+    width: 4px;
+    height: 4px;
+  
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.range-toggle-min {
+    left: 35px;
+  }
+  
+  .range-toggle-max {
+    left: 133px;
+  }
 
 .visually-hidden:not(:focus):not(:active) input,
 .visually-hidden input[type="checkbox"],
