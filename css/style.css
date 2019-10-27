@@ -1119,7 +1119,7 @@ a.basket-user-navigation {
 .hidden-popup {
     
     position: absolute;
-    display: none;
+    /*display: none;*/
     padding-top: 12px;
     z-index: 1;
 }
@@ -1167,6 +1167,10 @@ a.basket-user-navigation {
     width: 239px;
     min-height: 175px;
     padding: 20px 17px 20px 20px;
+}
+
+.item-user-navigation:nth-child(2) .pop-up-form {
+    min-height: 175px;
 }
 
 .item-user-navigation:nth-child(3) .pop-up {
@@ -1221,6 +1225,8 @@ a.basket-user-navigation {
     font-weight: 400;
     flex-grow: 1;
     padding-top: 2px;
+    
+    height: 29.5px;
 }
 
 
@@ -1243,7 +1249,8 @@ a.basket-user-navigation {
 .pop-up-item:first-child {
     position: relative;
     font-weight: 700;
-    height: 23px;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
 
 .pop-up-item:first-child::after {
@@ -1378,7 +1385,7 @@ a.basket-user-navigation {
 }
 
 .modal {
-    display: none;
+    /*display: none;*/
     position: fixed;
     top: 338px;
     left: 50%;
