@@ -1119,7 +1119,7 @@ a.basket-user-navigation {
 .hidden-popup {
     
     position: absolute;
-    /*display: none;*/
+    display: none;
     padding-top: 12px;
     z-index: 1;
 }
