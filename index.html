@@ -19,26 +19,32 @@
         <ul class="site-navigation">
           <li class="item-site-navigation">
             <div class="site-navigation-button">
-              <a href="catalog.html">Каталог</a>
+              <a href="catalog.html">
+                <span>Каталог</span>
+              </a>
             </div>
             <div class="hidden-popup">
               <ul class="pop-up">
-                <li><a href="">Новинки</a></li>
-                <li><a href="">Сливочное</a> </li>
-                <li><a href="">Щербеты</a> </li>
-                <li><a href="">Фруктовый лед</a> </li>
-                <li><a href="">Мелорин</a> </li>
+                <li class="pop-up-item"><a href="">Новинки</a></li>
+                <li class="pop-up-item"><a href="">Сливочное</a> </li>
+                <li class="pop-up-item"><a href="">Щербеты</a> </li>
+                <li class="pop-up-item"><a href="">Фруктовый лед</a> </li>
+                <li class="pop-up-item"><a href="">Мелорин</a> </li>
               </ul>
             </div>
           </li>
           <li class="item-site-navigation">
             <div class="site-navigation-button">
-              <a href="Shipping-and-payment.html">Доставка и оплата</a>
+              <a href="Shipping-and-payment.html">
+                <span>Доставка и оплата</span>
+              </a>
             </div>
           </li>
           <li class="item-site-navigation">
             <div class="site-navigation-button">
-                <a href="about-company.html">О Компании</a>
+                <a href="about-company.html">
+                  <span>О Компании</span>
+                </a>
             </div> 
           </li>
         </ul>
@@ -54,7 +60,7 @@
             <div class="hidden-popup">
             <div class="pop-up">
                 <h2 class="visually-hidden">Поиск по сайту</h2>
-                <form action="https://echo.htmlacademy.ru" method="POST">
+                <form class="pop-up-form" action="https://echo.htmlacademy.ru" method="POST">
                   <input type="text" name="search" placeholder="Что ищем?">
                 </form>
             </div>
@@ -71,23 +77,21 @@
             </a>
             <div class="hidden-popup">
               <div class="pop-up">
-                <form action="https://echo.htmlacademy.ru" method="POST">
-                  <p>
-                    <input type="email" name="email" placeholder="Электронная почта">
-                  </p>
-                  <p>
-                    <input type="password" name="password" placeholder="Пароль">
-                  </p>
-                  <p>
-                    <button class="button" type="submit">Войти</button>
-                  </p>
+                <form class="pop-up-form" action="https://echo.htmlacademy.ru" method="POST">
+                  <input type="email" name="email" placeholder="Электронная почта">
+                  <input type="password" name="password" placeholder="Пароль">
+                  <div class="one-row">
+                      <button class="button" type="submit">Войти</button>
+                      <div class="one-column-popap">
+                        <a href="#" aria-label="Восстановление пароля">
+                          Забыли пароль?
+                        </a>
+                        <a href="#" aria-label="Страница регистрации">
+                          Новая регистрация
+                        </a>
+                      </div>
+                  </div>
                 </form>
-                <a href="#" aria-label="Восстановление пароля">
-                  Забыли пароль?
-                </a>
-                <a href="#" aria-label="Страница регистрации">
-                  Новая регистрация
-                </a>
               </div>
             </div>
           </li>
@@ -442,7 +446,7 @@
     <section class="modal pop-up"> 
       <h2 class="visually-hidden">Обратная связь</h2>
       <p>Мы обязательно вам отетим!</p>
-      <form class="modal-form" action="https://echo.htmlacademy.ru" method="POST">
+      <form class="modal-form pop-up-form" action="https://echo.htmlacademy.ru" method="POST">
           <input type="text" name="name" placeholder="Имя Фамилия">
           <input type="email" name="email" placeholder="email@example.com">
           <textarea name="comment" cols="40" rows="5" placeholder="В свободной форме"></textarea>
