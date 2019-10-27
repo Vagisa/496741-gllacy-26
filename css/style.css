@@ -33,10 +33,6 @@ body {
 a {
     text-decoration: none;
 }
-/*
-.pop-up {
-    display: none;
-}*/
 
 .container {
     max-width: 1146px;
@@ -95,11 +91,12 @@ a {
     background-color: rgb(208, 112, 88);
 }
 
-.this-page-nav a {
+.this-page-nav span {
     border: none;
 }
 
-.site-navigation-button > a {
+.site-navigation-button > a,
+.this-page-nav > a {
     padding: 6.5px 14px; 
 }
 
@@ -107,10 +104,12 @@ a {
 .site-navigation-button > a:focus {
     
     border-radius: 40px;
-    background-color: rgb(248, 247, 244);
+    background-color: rgb(247, 246, 243);
 }
 
-
+.site-navigation-button:active a {
+    box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
+}
 
 .site-navigation-button:hover a{
     color: rgb(50, 50, 50);
@@ -486,14 +485,20 @@ a.basket-user-navigation {
     margin-bottom: 20px;
 }
 
+.product-item h3:hover {
+    color: #ffbc9e;
+}
+
+.product-item a:focus h3 {
+    color: #ffbc9e;
+}
+
 .main-catalog .product-item:last-child h3 {
     margin-top: 0px;
     margin-bottom: 40px;
 }
 
 .advantages {
-   /* display: flex;
-    flex-direction: column;*/
     max-width: 1102px;
     min-height: 270px;
     border-radius: 15px;
@@ -575,6 +580,11 @@ a.basket-user-navigation {
     border-bottom: 2px solid #323232;
 }
 
+.advertising a:hover {
+    color: #e84d37;
+    border-bottom: 2px solid #e84d37;
+}
+
 .subscription {
     width: 560px;
     min-height: 220px;
@@ -615,8 +625,6 @@ a.basket-user-navigation {
 }
 
 .subscription .button {
-    /*width: 131px;
-    height: 44px;*/
     padding-top: 10px;
     padding-left: 17px;
     padding-right: 20px;
@@ -685,6 +693,13 @@ a.basket-user-navigation {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     margin-right: -5px;
 }
+
+.bread-crumbs a:hover,
+.bread-crumbs a:focus {
+    color: #ffbc9e;
+    border-bottom: 1px solid rgba(255, 188, 158, 0.2);
+}
+
 .bread-crumbs a.disabled {
     border-color: transparent;
 }
@@ -769,8 +784,10 @@ a.basket-user-navigation {
     background-position: 168px center;
 }
 
+
 .filter-item-select option {
     background-color: #ffffff;
+    height: 22px;
 }
 
 .filter-range legend {
@@ -1002,6 +1019,11 @@ a.basket-user-navigation {
     font-weight: 400;
 }
 
+.main-footer a:hover,
+.main-footer a:focus {
+    color: #ffbc9e;
+}
+
 .main-footer ul {
     list-style: none;
     padding: 0;
@@ -1050,6 +1072,11 @@ a.basket-user-navigation {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.information a:hover,
+.information a:focus {
+    border-bottom: 1px solid rgba(255, 188, 158, 0.2);
+}
+
 .information img {
     margin-right: 6px;
 }
@@ -1084,11 +1111,17 @@ a.basket-user-navigation {
     text-decoration-color: rgba(255, 255, 255, 0.2);
 }
 
+.copyright a:hover,
+.copyright a:focus {
+    border-bottom: 1px solid rgba(255, 188, 158, 0.2);
+}
+
 .hidden-popup {
     
     position: absolute;
     display: none;
     padding-top: 12px;
+    z-index: 1;
 }
 
 .item-site-navigation {
@@ -1105,6 +1138,8 @@ a.basket-user-navigation {
     min-height: 171px;
 }
 
+
+
 .item-user-navigation {
     position: relative;
     display: flex;
@@ -1114,12 +1149,13 @@ a.basket-user-navigation {
 
 .item-user-navigation .hidden-popup {
     right: 0;
-    top: 26px;
+    top: 24px;
 } 
 
 .hidden-popup button {
-    height: 46px;
+    height: 44px;
     min-width: 100px;
+    border-radius: 20px;
 }
 
 .item-user-navigation:first-child .pop-up {
@@ -1128,23 +1164,21 @@ a.basket-user-navigation {
 }
 
 .item-user-navigation:nth-child(2) .pop-up {
-    width: 238px;
+    width: 239px;
     min-height: 175px;
-    padding: 20px 20px;
+    padding: 20px 17px 20px 20px;
 }
 
 .item-user-navigation:nth-child(3) .pop-up {
-    width: 238px;
-    min-height: 175px;
-    padding: 20px 20px;
+    width: 510px;
+    min-height: 202px;
+    padding: 20px 15px;
 }
-/*
-.item-user-navigation .hidden-popup {
-    display: block;
-}*/
+
 
 .pop-up .one-column-popap {
     padding: 0;
+    padding-bottom: 7px;
     width: 119px;
     color: inherit;
 }
@@ -1152,37 +1186,44 @@ a.basket-user-navigation {
 .one-column-popap a  {
     color: inherit;
     font-size: 13px;
-    line-height: 24px;
+    line-height: 20px;
     font-weight: 400;
     border-bottom: 1px solid #323232;
 }
 
 .item-site-navigation:hover .hidden-popup,
-.item-site-navigation a:focus ~ .hidden-popup,
+.site-navigation-button a:focus .hidden-popup,
 .item-user-navigation:hover .hidden-popup,
-.item-user-navigation a:focus .hidden-popup {
+.user-navigation-button a:focus .hidden-popup {
     display: block;
 }
 
+.hidden-popup ul {
+    list-style: none;
+}
 
 .pop-up {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-wrap: wrap;
     border-radius: 6px;
     color: #323232;
     background-color: rgb(248, 247, 244);
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-    list-style: none;
     overflow: hidden;
 }
 
-.pop-up li {
-    height: 38px;
+.pop-up-item {
+    display: flex;
     font-size: 14px;
     line-height: 16px;
     font-weight: 400;
+    flex-grow: 1;
+    padding-top: 2px;
 }
+
+
 
 .pop-up-item:hover {
     background-color: rgb(251, 222, 215);
@@ -1199,27 +1240,32 @@ a.basket-user-navigation {
     background-color: rgb(208, 112, 88);
 }
 
-.pop-up li:first-child {
-    display: flex;
-    flex-direction: column;
+.pop-up-item:first-child {
+    position: relative;
     font-weight: 700;
+    height: 23px;
 }
 
-.pop-up li:first-child::after {
-    align-self: center;
+.pop-up-item:first-child::after {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
     content: "";
     width: 128px;
     height: 1px;
     background-color: rgba(50, 50, 50, 0.2);
 }
 
-.item-site-navigation a {
+.pop-up-item:last-child {
+    padding-bottom: 6px;
+}
+
+.pop-up-item a {
     display: inline-flex;
     align-items: center;
-    width: 100%;
-    height: 100%;
     padding-left: 22px;
     color: inherit;
+    flex-grow: 1;
 }
 
 .pop-up-form {
@@ -1233,7 +1279,7 @@ a.basket-user-navigation {
 .pop-up-form input,
 .pop-up-form textarea {
     padding: 0;
-    padding-left: 16px;
+    padding-left: 12px;
     margin: 0;
     font-family: "Roboto", Arial, sans-serif;
     font-size: 14px; 
@@ -1248,17 +1294,98 @@ a.basket-user-navigation {
 }
 
 .pop-up-form input {
-    min-height: 44px;
+    min-height: 42px;
+}
+
+.pop-up-list {
+    font-size: 13px;
+    font-weight: 400;
+    padding-bottom: 3px;
+    border-bottom: 1px solid rgba(50, 50, 50, 0.2);
+}
+
+.pop-up-list li {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.pop-up-list li::before,
+.pop-up-list li::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: -2px;
+    width: 15px;
+    height: 1px;
+    background-color: #323232;
+    cursor: pointer;
+}
+
+.pop-up-list li::before {
+    transform: rotate(45deg);
+}
+
+.pop-up-list li::after {
+    transform: rotate(-45deg);
+}
+
+.pop-up-list a {
+    display: inline-flex;
+    width: 300px;
+    color: #323232;
+    min-height: 53.5px;
+    margin-right: 5px;
+}
+
+.pop-up-list img {
+    margin-left: 24px;
+    margin-right: 12px;
+    margin-top: 0;
+}
+
+.pop-up-list span {
+    margin-top: 9px;
+}
+
+.pop-up-list p {
+    margin-top: 8px;
+    text-align: center;
+}
+
+.pop-up-list p:nth-child(2){
+    width: 105px;
+    margin-left: 5px;
+}
+
+.pop-up-list p:nth-child(3){
+    width: 90px;
+}
+
+.pop-up .basket-button {
+    margin-left: auto;
+    padding: 13px 14px;
+    height: 46px;
+}
+
+.pop-up .price {
+    margin-left: auto;
+    margin-bottom: 12px;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 700;
 }
 
 .modal {
+    display: none;
     position: fixed;
-    top: 343px;
+    top: 338px;
     left: 50%;
-    margin-left: -239px;
+    margin-left: -236px;
     width: 428px;
-    height: 398px;
-    padding: 15px 25px 30px;
+    min-height: 394px;
+    padding: 15px 25px 26px;
     border-radius: 10px;
     z-index: 2;
     box-shadow: none;
@@ -1266,9 +1393,10 @@ a.basket-user-navigation {
 
 .modal p {
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     font-size: 24px;
     line-height: 28px;
+    flex-grow: 1;
 }
 
 .modal .pop-up-form {
@@ -1295,7 +1423,7 @@ a.basket-user-navigation {
 }
 
 .modal-form input {
-    width: 253px;
+    width: 252px;
 }
 
 .modal-form textarea {
@@ -1309,8 +1437,8 @@ a.basket-user-navigation {
 
 .modal-form button {
     width: 139px;
-    height: 44px;
-    margin-top: 4px;
+    height: 46px;
+    margin-top: 6px;
     margin-left: auto;
 }
 
