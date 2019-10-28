@@ -8,6 +8,9 @@
     rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script 
+    src="https://api-maps.yandex.ru/2.1/?apikey=ae67ae22-991e-48ae-81f9-8cb7e880d4fe&lang=ru_RU" 
+    type="text/javascript"></script>
   </head>
   <body>
     <header class="main-header container">
@@ -316,7 +319,7 @@
         </section>
       </div>
       
-      <section class="contacts">
+      <section id="map" class="contacts">
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <div>
           <p>
@@ -448,6 +451,30 @@
         <span class="visually-hidden">Закрыть</span>
       </button>
     </section>
+    <script type="text/javascript">
+      // Функция ymaps.ready() будет вызвана, когда
+      // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+      ymaps.ready(init);
+      function init(){
+          // Создание карты.
+          var myMap = new ymaps.Map("map", {
+              // Координаты центра карты.
+              // Порядок по умолчанию: «широта, долгота».
+              // Чтобы не определять координаты центра карты вручную,
+              // воспользуйтесь инструментом Определение координат.
+              center: [59.9394, 30.32951],
+              // Уровень масштабирования. Допустимые значения:
+              // от 0 (весь мир) до 19.
+              zoom: 16
+          });
+      }
+      var myPlacemark = new ymaps.Placemark([59.9394, 30.32951], {}, {
+      iconLayout: 'default#map',
+      iconImageHref: '/img/Pin.png',
+      iconImageSize: [142, 218],
+      iconImageOffset: [0, 0]
+      });
+    </script>
     <script>
       var link = document.querySelector(".modal-open");
       var popup = document.querySelector(".modal");

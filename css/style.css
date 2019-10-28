@@ -631,10 +631,11 @@ a.basket-user-navigation {
 }
 
 .contacts {
+    position: relative;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    max-width: 1200px;
+    width: auto;
     margin: 39px auto 7px;
     padding: 0;
     min-height: 429px;
@@ -644,7 +645,11 @@ a.basket-user-navigation {
 }
 
 .contacts div {
-    margin-right: 27px;
+    position: absolute;
+    top: 32pxpx;
+    left: 50%;
+    margin-left: 271px;
+    /*margin-right: 27px;*/
     width: 252px;
     height: 246px;
     padding: 28px 25px 31px;
@@ -654,6 +659,7 @@ a.basket-user-navigation {
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
+    z-index: 1;
 }
 
 .contacts p {
