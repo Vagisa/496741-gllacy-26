@@ -1439,7 +1439,9 @@ a.basket-user-navigation {
 .modal {
     display: none;
     position: fixed;
-    top: 338px;
+    /*top: 338px;*/
+    top: 50%;
+    margin-top: -150px;
     left: 50%;
     margin-left: -236px;
     width: 428px;
