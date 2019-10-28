@@ -441,12 +441,14 @@
     <section class="modal pop-up"> 
       <h2 class="visually-hidden">Обратная связь</h2>
       <p>Мы обязательно вам ответим!</p>
-      <form class="modal-form pop-up-form" action="https://echo.htmlacademy.ru" method="POST">
-          <input type="text" name="name" placeholder="Имя Фамилия">
-          <input type="email" name="email" placeholder="email@example.com">
-          <textarea name="comment" cols="40" rows="5" placeholder="В свободной форме"></textarea>
+      <form class="pop-up-form modal-form" action="https://echo.htmlacademy.ru" method="POST">
+        <input type="text" name="name" placeholder="Имя Фамилия">
+        <input type="email" name="email" placeholder="email@example.com">
+        <textarea name="comment" cols="40" rows="5" placeholder="В свободной форме"></textarea>
+        <div class="modal-button">
           <button class="button" type="submit">Отправить</button>
-        </form>
+        </div>
+      </form>
       <button class="modal-close" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
