@@ -646,7 +646,7 @@ a.basket-user-navigation {
 
 .contacts div {
     position: absolute;
-    top: 32pxpx;
+    top: 62px;
     left: 50%;
     margin-left: 271px;
     /*margin-right: 27px;*/
@@ -1291,7 +1291,6 @@ a.basket-user-navigation {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-wrap: wrap;
     flex-grow: 1;
 }
 
@@ -1439,14 +1438,13 @@ a.basket-user-navigation {
 .modal {
     display: none;
     position: fixed;
-    /*top: 338px;*/
     top: 50%;
     margin-top: -150px;
     left: 50%;
     margin-left: -236px;
     width: 428px;
     min-height: 394px;
-    padding: 15px 25px 26px;
+    padding: 15px 25px 24px;
     border-radius: 10px;
     z-index: 2;
     box-shadow: none;
