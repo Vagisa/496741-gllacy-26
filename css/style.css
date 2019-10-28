@@ -1395,7 +1395,7 @@ a.basket-user-navigation {
     line-height: 18px;
     font-weight: 700;
 }
-/*Анимацию для открытия модального окна*/
+/*Анимация для открытия модального окна*/
 @keyframes bounce {
     0% {
       transform: translateY(-2000px);
@@ -1413,7 +1413,7 @@ a.basket-user-navigation {
       transform: translateY(0);
     }
 }
-/*Анимацию для тряски формы в случае ошибки*/
+/*Анимация для тряски формы в случае ошибки*/
 @keyframes shake {
     0%,
     100% {
