@@ -438,6 +438,7 @@
         </p>
       </div>
     </footer>
+    <div class="overlay"></div>
     <section class="modal pop-up"> 
       <h2 class="visually-hidden">Обратная связь</h2>
       <p>Мы обязательно вам ответим!</p>
@@ -484,6 +485,7 @@
       var form = popup.querySelector(".modal-form");
       var login = popup.querySelector("[name=name]");
       var email = popup.querySelector("[name=email]");
+      var overlay = document.querySelector(".overlay");
       //Если браузер не имеет поддержку localStorage, или он отключен
       var isStorageSupport = true;
       var storage = "";
@@ -506,6 +508,11 @@
           } else {
             login.focus();
             }
+        });
+      overlay.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
+        popup.classList.remove("modal-error");
         });
       //Обработчик клика по кнопке закрытия модального окна. 
       //Отменяем стандартное действие и удаляем класс, 
