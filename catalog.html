@@ -162,71 +162,69 @@
           </li>
         </ul>
       </nav>
-      <section class="main-content">
-        <div class="container">
-            <h2 class="page-title">Сливочное мороженое</h2>
-            <h3 class="visually-hidden">Фильтр</h3>
-            <form class="filter" action="https://echo.htmlacademy.ru" method="GET">
-              <fieldset class="filter-select">
-                <legend>Сортировка:</legend>
-                <select class="filter-item filter-item-select" name="sorting">
-                  <option value="by-popularity">по популярности</option>
-                  <option value="price-increase">сначала недорогие</option>
-                  <option value="price-decrease">сначала дорогие</option>
-                  <option value="price-decrease">по жирности</option>
-                </select>
-              </fieldset>
-              <fieldset class="filter-range">
-                <legend>Цена: 100 руб. - 500 руб.</legend>
-                <div class="filter-item range-controls">
-                  <input class="visually-hidden" type="range" min="100" max="500">
-                  <div class="scale">
-                    <div class="bar"></div>
-                  </div>
-                  <div class="range-toggle range-toggle-min"></div>
-                  <div class="range-toggle range-toggle-max"></div>
-                </div>
-              </fieldset>
-              <fieldset class="filter-radio">
-                <legend>Жирность</legend>
-                <div class="filter-item  filter-item-radio">
-                  <input class="visually-hidden filter-input-radio" type="radio" 
-                  name="fat-content" value="0%" id="filter-zero">
-                  <label for="filter-zero">0%</label>
-                  <input class="visually-hidden filter-input-radio" 
-                  type="radio" name="fat-content" value="to-10%" id="filter-ten" checked>
-                  <label for="filter-ten">до 10%</label>
-                  <input class="visually-hidden filter-input-radio" type="radio" 
-                  name="fat-content" value="to-30%" id="filter-thirty">
-                  <label for="filter-thirty">до 30%</label>
-                  <input class="visually-hidden filter-input-radio" type="radio" 
-                  name="fat-content" value="from-30%" id="filter-above-thirty">
-                  <label for="filter-above-thirty">выше 30%</label>
-                </div>
-              </fieldset>
-              <fieldset class="filter-checkbox">
-                <legend>Наполнители:</legend>
-                <div class="filter-item   filter-item-checkbox">
-                  <input class="visually-hidden filter-input-checkbox" type="checkbox" 
-                  name="chocolate" checked id="filter-chocolate">
-                  <label for="filter-chocolate">шоколадные</label>
-                  <input class="visually-hidden filter-input-checkbox" type="checkbox" 
-                  name="sugar-powders" checked id="filter-sugar-powders">
-                  <label for="filter-sugar-powders">сахарные присыпки</label>
-                  <input class="visually-hidden filter-input-checkbox" type="checkbox" 
-                  name="fruits" id="filter-fruits">
-                  <label for="filter-fruits">фрукты</label>
-                  <input class="visually-hidden filter-input-checkbox" type="checkbox" 
-                  name="syrups" id="filter-syrups">
-                  <label for="filter-syrups">сиропы</label>
-                  <input class="visually-hidden filter-input-checkbox" type="checkbox" 
-                  name="jams" id="filter-jams">
-                  <label for="filter-jams">джемы</label>
-                </div>
-              </fieldset>
-              <button class="filter-button" type="submit">Применить</button>
-            </form>
-        </div>
+      <section  class="container">
+        <h2 class="page-title">Сливочное мороженое</h2>
+        <h3 class="visually-hidden">Фильтр</h3>
+        <form class="filter" action="https://echo.htmlacademy.ru" method="GET">
+          <fieldset class="filter-select">
+            <legend>Сортировка:</legend>
+            <select class="filter-item filter-item-select" name="sorting">
+              <option value="by-popularity">по популярности</option>
+              <option value="price-increase">сначала недорогие</option>
+              <option value="price-decrease">сначала дорогие</option>
+              <option value="price-decrease">по жирности</option>
+            </select>
+          </fieldset>
+          <fieldset class="filter-range">
+            <legend>Цена: 100 руб. - 500 руб.</legend>
+            <div class="filter-item range-controls">
+              <input class="visually-hidden" type="range" min="100" max="500">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+          </fieldset>
+          <fieldset class="filter-radio">
+            <legend>Жирность</legend>
+            <div class="filter-item  filter-item-radio">
+              <input class="visually-hidden filter-input-radio" type="radio"
+              name="fat-content" value="0%" id="filter-zero">
+              <label for="filter-zero">0%</label>
+              <input class="visually-hidden filter-input-radio" 
+              type="radio" name="fat-content" value="to-10%" id="filter-ten" checked>
+              <label for="filter-ten">до 10%</label>
+              <input class="visually-hidden filter-input-radio" type="radio" 
+              name="fat-content" value="to-30%" id="filter-thirty">
+              <label for="filter-thirty">до 30%</label>
+              <input class="visually-hidden filter-input-radio" type="radio" 
+              name="fat-content" value="from-30%" id="filter-above-thirty">
+              <label for="filter-above-thirty">выше 30%</label>
+            </div>
+          </fieldset>
+          <fieldset class="filter-checkbox">
+          <legend>Наполнители:</legend>
+            <div class="filter-item   filter-item-checkbox">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" 
+              name="chocolate" checked id="filter-chocolate">
+              <label for="filter-chocolate">шоколадные</label>
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" 
+              name="sugar-powders" checked id="filter-sugar-powders">
+              <label for="filter-sugar-powders">сахарные присыпки</label>
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" 
+              name="fruits" id="filter-fruits">
+              <label for="filter-fruits">фрукты</label>
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" 
+              name="syrups" id="filter-syrups">
+              <label for="filter-syrups">сиропы</label>
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" 
+              name="jams" id="filter-jams">
+              <label for="filter-jams">джемы</label>
+            </div>
+          </fieldset>
+          <button class="filter-button" type="submit">Применить</button>
+        </form>
         <ul class="product-list">
           <li class="product-item">
             <a href="item1.html" aria-label="Страница товара 
@@ -236,7 +234,7 @@
                 alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                 <figcaption>
                   <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-                  <p>310 &#8381;/<span>кг</span></p>
+                  <p>310 &#8381;<span>/кг</span></p>
                 </figcaption>
               </figure>
               <button class="button hideaway" type="button">Быстрый просмотр</button>
@@ -250,7 +248,7 @@
                 alt="Сливочно-кофейное с кусочками шоколада">
                 <figcaption>
                   <h3>Сливочно-кофейное с кусочками шоколада</h3>
-                  <p>380 &#8381;/<span>кг</span></p>
+                  <p>380 &#8381;<span>/кг</span></p>
                 </figcaption>
               </figure>
               <button class="button hideaway" type="button">Быстрый просмотр</button>
@@ -264,7 +262,7 @@
                 alt="Сливочно-клубничное с присыпкой из белого шоколада">
                 <figcaption>
                   <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
-                  <p>355 &#8381;/<span>кг</span></p>
+                  <p>355 &#8381;<span>/кг</span></p>
                 </figcaption>
               </figure>
               <button class="button hideaway" type="button">Быстрый просмотр</button>
@@ -278,7 +276,7 @@
                 alt="Сливочное крем-брюле с карамельной подливкой">
                 <figcaption>
                   <h3>Сливочное крем-брюле с карамельной подливкой</h3>
-                  <p>415 &#8381;/<span>кг</span></p>
+                  <p>415 &#8381;<span>/кг</span></p>
                 </figcaption>
               </figure>
               <button class="button hideaway" type="button">Быстрый просмотр</button>
@@ -292,7 +290,7 @@
                 alt="Сливочное с брусничным джемом">
                 <figcaption>
                   <h3>Сливочное с брусничным джемом</h3>
-                  <p>325 &#8381;/<span>кг</span></p>
+                  <p>325 &#8381;<span>/кг</span></p>
                 </figcaption>
               </figure>
               <button class="button hideaway" type="button">Быстрый просмотр</button>
@@ -306,7 +304,7 @@
                 alt="Сливочно-черничное с цельными ягодами черники">
                 <figcaption>
                   <h3>Сливочно-черничное с цельными ягодами черники</h3>
-                  <p>410 &#8381;/<span>кг</span></p>
+                  <p>410 &#8381;<span>/кг</span></p>
                 </figcaption>
               </figure>
               <button class="button hideaway" type="button">Быстрый просмотр</button>
@@ -320,7 +318,7 @@
                 alt="Сливочно-лимонное с карамельной присыпкой">
                 <figcaption>
                   <h3>Сливочно-лимонное с карамельной присыпкой</h3>
-                  <p>375 &#8381;/<span>кг</span></p>
+                  <p>375 &#8381;<span>/кг</span></p>
                 </figcaption>
               </figure>
               <button class="button hideaway" type="button">Быстрый просмотр</button>
@@ -334,7 +332,7 @@
                 alt="Сливочное с шоколадной стружкой">
                 <figcaption>
                   <h3>Сливочное с шоколадной стружкой</h3>
-                  <p>320 &#8381;/<span>кг</span></p>
+                  <p>320 &#8381;<span>/кг</span></p>
                 </figcaption>
               </figure>
               <button class="button hideaway" type="button">Быстрый просмотр</button>
@@ -348,7 +346,7 @@
                 alt="Сливочно-ванильное с кусочками шоколада">
                 <figcaption>
                   <h3>Сливочно-ванильное с кусочками шоколада</h3>
-                  <p>440 &#8381;/<span>кг</span></p>
+                  <p>440 &#8381;<span>/кг</span></p>
                 </figcaption>
               </figure>
               <button class="button hideaway" type="button">Быстрый просмотр</button>
@@ -362,7 +360,7 @@
                 alt="Сливочноe с ментоловым сиропом">
                 <figcaption>
                   <h3>Сливочноe с ментоловым сиропом</h3>
-                  <p>435 &#8381;/<span>кг</span></p>
+                  <p>435 &#8381;<span>/кг</span></p>
                 </figcaption>
               </figure>
               <button class="button hideaway" type="button">Быстрый просмотр</button>
@@ -376,7 +374,7 @@
                 alt="Сливочное с кусочками черного шоколада">
                 <figcaption>
                   <h3>Сливочное с кусочками черного шоколада</h3>
-                  <p>355 &#8381;/<span>кг</span></p>
+                  <p>355 &#8381;<span>/кг</span></p>
                 </figcaption>
               </figure>
               <button class="button hideaway" type="button">Быстрый просмотр</button>
@@ -390,7 +388,7 @@
                 alt="Сливочное с мятным сиропом">
                 <figcaption>
                   <h3>Сливочное с мятным сиропом</h3>
-                  <p>420 &#8381;/<span>кг</span></p>
+                  <p>420 &#8381;<span>/кг</span></p>
                 </figcaption>
               </figure>
               <button class="button hideaway" type="button">Быстрый просмотр</button>
@@ -399,13 +397,13 @@
         </ul>
       </section>
       <ul class="pagination">
-        <li class="pagination-item"><a href="#" aria-label="Предыдущие страницы">&lt;</a></li>
+        <li class="pagination-item"><a href="#" aria-label="Предыдущие страницы"></a></li>
         <li class="pagination-item this-page"><a href="#" aria-label="Первая страница">1</a></li>
         <li class="pagination-item"><a href="#" aria-label="Вторая страница">2</a></li>
         <li class="pagination-item"><a href="#" aria-label="Третья страница">3</a></li>
         <li class="pagination-item"><a href="#" aria-label="Четвёртая страница">4</a></li>
         <li class="pagination-item"><a href="#" aria-label="Пятая страница">5</a></li>
-        <li class="pagination-item"><a href="#" aria-label="Следующие страницы">&gt;</a></li>
+        <li class="pagination-item"><a href="#" aria-label="Следующие страницы"></a></li>
       </ul>
     </main>
     <footer class="main-footer container">
