@@ -463,6 +463,7 @@ button.slider-default {
     margin: 0;
     color: #ffffff;
     min-height: 344px;
+    width: 287px;
 }
 
 .product-item figcaption {
