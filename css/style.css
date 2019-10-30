@@ -607,7 +607,7 @@ button.slider-default {
     font-size: 24px;
     line-height: 29px;
     color: #323232;
-    background-image: linear-gradient(to right, #323232 100%, transparent 0%);
+    background-image: linear-gradient(to bottom, #323232 0%, #323232 100%);
     background-position: 0 1.1em;
     background-repeat: repeat-x;
     background-size: 10px 2px;
@@ -774,6 +774,10 @@ button.slider-default {
     line-height: 16px;
 }
 
+.filter label {
+    cursor: pointer;
+}
+
 .filter-item {
     display: flex;
     justify-content: space-between;
@@ -800,9 +804,10 @@ button.slider-default {
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
-    background-image: url(../img/icon-down-dir.svg);
+    background-image: url("../img/icon-down-dir.svg");
     background-repeat: no-repeat;
     background-position: 168px center;
+    cursor: pointer;
 }
 
 .filter-item-select::-ms-expand {
@@ -812,7 +817,7 @@ button.slider-default {
 .filter-item-select:hover,
 .filter-item-select:focus {
     color: #323232;
-    background-image: url(../img/icon-down-dir-2.svg);
+    background-image: url("../img/icon-down-dir-2.svg");
     background-repeat: no-repeat;
     background-position: 168px center;
 }
@@ -1047,11 +1052,11 @@ button.slider-default {
     color: #ffffff;
 }
 
-.pagination-item:hover {
+.pagination-item:not(:first-child):not(:last-child):hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-.pagination-item a:focus {
+.pagination-item:not(:first-child):not(:last-child) a:focus {
     width: 27px;
     height: 26px;
     border-radius: 50%;

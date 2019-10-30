@@ -6,23 +6,19 @@
           // Создание карты.
           var myMap = new ymaps.Map("map", {
               // Координаты центра карты.
-              // Порядок по умолчанию: «широта, долгота».
-              // Чтобы не определять координаты центра карты вручную,
-              // воспользуйтесь инструментом Определение координат.
-              center: [59.9394, 30.32951],
-              // Уровень масштабирования. Допустимые значения:
-              // от 0 (весь мир) до 19.
+              center: [59.938631, 30.323055],
+              // Уровень масштабирования.
               zoom: 16 
             },
               {
                 searchControlPointer: "yandex#search"
               });
-            var myPlacemark = new ymaps.Placemark([59.9394, 30.32951], {}, {
+            var myPlacemark = new ymaps.Placemark([59.938631, 30.323055], {}, {
               cursor: "arrow",
               iconLayout: 'default#image',
               iconImageHref: 'img/Pin.png',
               iconImageSize: [218, 142],
-              iconImageOffset: [-334, -76]
+              iconImageOffset: [-40, -139]
           });
           myMap.geoObjects.add(myPlacemark);
         };
@@ -33,37 +29,34 @@
       var linkSlider1 = document.querySelector(".slider-switch1");
       var linkSlider2 = document.querySelector(".slider-switch2");
       var linkSlider3 = document.querySelector(".slider-switch3");
-      var bestDealList = document.querySelector(".best-deal-list");
+     // var bestDealList = document.querySelector(".best-deal-list");
       var bckg = document.querySelector("body");
 
-      linkSlider1.addEventListener("click", function (evt) { 
-        evt.preventDefault(); 
-        bestDealList.classList.add("background1");
-        bestDealList.classList.remove("background2");
-        bestDealList.classList.remove("background3");
-        bckg.classList.add("bckg1");
+      function switchBckgClass (newClass) {
+        bckg.classList.remove("bckg1");
         bckg.classList.remove("bckg2");
         bckg.classList.remove("bckg3");
+        bckg.classList.add(newClass);
+      }
+
+      function switchActiveSliderButton (activeButton) {
+        linkSlider1.classList.remove("slider-default");
+        linkSlider2.classList.remove("slider-default");
+        linkSlider3.classList.remove("slider-default");
+        activeButton.classList.add("slider-default");
+      }
+
+      linkSlider1.addEventListener("click", function (evt) { 
+        switchBckgClass("bckg1");
+        switchActiveSliderButton(evt.target)
       });
       linkSlider2.addEventListener("click", function (evt) { 
-        evt.preventDefault(); 
-        bestDealList.classList.add("background2");
-        bestDealList.classList.remove("background1");
-        bestDealList.classList.remove("background3");
-        linkSlider1.classList.remove("slider-default");
-        bckg.classList.add("bckg2");
-        bckg.classList.remove("bckg1");
-        bckg.classList.remove("bckg3");
+        switchBckgClass("bckg2");
+        switchActiveSliderButton(evt.target)
       });
       linkSlider3.addEventListener("click", function (evt) { 
-        evt.preventDefault(); 
-        bestDealList.classList.add("background3");
-        bestDealList.classList.remove("background1");
-        bestDealList.classList.remove("background2");
-        linkSlider1.classList.remove("slider-default");
-        bckg.classList.add("bckg3");
-        bckg.classList.remove("bckg1");
-        bckg.classList.remove("bckg2");
+        switchBckgClass("bckg1");
+        switchActiveSliderButton(evt.target)
       });
     
 
