@@ -7,7 +7,18 @@ body {
     line-height: 22px;
     font-weight: 700;
     color: #ffffff;
+}
+
+body.bckg1 {
     background-color: #849d8f;
+}
+
+body.bckg2 {
+    background-color: #8996a6;
+}
+
+body.bckg3 {
+    background-color: #9d8b84;
 }
 
 :focus {
@@ -207,11 +218,26 @@ a.basket-user-navigation {
 
 .best-deal-list {
     position: relative;
+    min-height: 637.5px;
+    
     top: -152px;
     left: -20px;
     text-align: center;
     list-style: none;
 }
+ 
+.background1 .best-deal-item:not(:first-child) {
+    display: none;
+}
+
+.background2 .best-deal-item:not(:nth-child(2)) {
+    display: none;
+}
+
+.background3 .best-deal-item:not(:nth-child(3)) {
+    display: none;
+}
+
 
 .best-deal-list h3 {
     width: 675px;
@@ -225,14 +251,19 @@ a.basket-user-navigation {
     z-index: -1;
 }
 
-.best-deal-item:not(:first-child) {
-    display: none;
+.best-deal-item:nth-child(2)  img {
+    margin-bottom: 22px;
+}
+
+.best-deal-item:nth-child(3)  img {
+    margin-bottom: 27px;
 }
 
 .best-deal-item figure {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 605.5px;
 }
 
 .best-deal-item figcaption {
@@ -297,7 +328,7 @@ a.basket-user-navigation {
     margin: 5px;
 }
 
-.slider-item:first-child button {
+button.slider-default {
     background-color: rgb(255, 255, 255);
 } 
 
@@ -331,13 +362,13 @@ a.basket-user-navigation {
     min-height: 185px;
     padding: 16.5px 23px 23px 18px;
     border-radius: 15px;
-    background-color: #8e0220;
     background-repeat: repeat;
 }
 
 .raspberry {
     background-image: url("../img/Raspberry-bckg.jpg");
     background-position: -50px -94px;
+    background-color: #8e0220;
 }
 
 .raspberry  .button {
@@ -347,6 +378,7 @@ a.basket-user-navigation {
 .chocolate {
     background-image: url("../img/Chocolate-bckg.jpg");
     background-position: -220px -105px;
+    background-color: #35190b;
 }
 
 .chocolate  .button {

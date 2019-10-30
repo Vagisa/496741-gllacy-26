@@ -12,7 +12,7 @@
     src="https://api-maps.yandex.ru/2.1/?apikey=ae67ae22-991e-48ae-81f9-8cb7e880d4fe&lang=ru_RU" 
     type="text/javascript"></script>
   </head>
-  <body>
+  <body class="bckg1">
     <header class="main-header container">
       <nav class="main-navigation">
         <a  class="main-navigation-logo">
@@ -118,7 +118,7 @@
       <h1 class="visually-hidden">Глейси</h1>
       <section class="best-deal container">
         <h2 class="visually-hidden">Лучшие предложения</h2>
-        <ul class="best-deal-list">
+        <ul class="best-deal-list background1">
           <li class="best-deal-item">
             <figure>
               <img src="img/two-ice-creams.png" width="1045" height="881"
@@ -154,14 +154,14 @@
           </li>
         </ul>
         <ul class="slider">
-          <li class="slider-item">
-            <button type="button" aria-label="Первое предложение"></button>
+          <li class="slider-item slider-default">
+            <button class="slider-switch1 slider-default" type="button" aria-label="Первое предложение"></button>
           </li>
           <li class="slider-item">
-            <button type="button" aria-label="Второе предложение"></button>
+            <button class="slider-switch2" type="button" aria-label="Второе предложение"></button>
           </li>
           <li class="slider-item">
-            <button type="button" aria-label="Третье предложение"></button>
+            <button class="slider-switch3" type="button" aria-label="Третье предложение"></button>
           </li>
         </ul>
       </section>
@@ -480,6 +480,47 @@
       iconImageOffset: [0, 0]
       });
     </script>
+
+
+    <script>
+      var linkSlider1 = document.querySelector(".slider-switch1");
+      var linkSlider2 = document.querySelector(".slider-switch2");
+      var linkSlider3 = document.querySelector(".slider-switch3");
+      var bestDealList = document.querySelector(".best-deal-list");
+      var bckg = document.querySelector("body");
+
+      linkSlider1.addEventListener("click", function (evt) { 
+        evt.preventDefault(); 
+        bestDealList.classList.add("background1");
+        bestDealList.classList.remove("background2");
+        bestDealList.classList.remove("background3");
+        bckg.classList.add("bckg1");
+        bckg.classList.remove("bckg2");
+        bckg.classList.remove("bckg3");
+      });
+      linkSlider2.addEventListener("click", function (evt) { 
+        evt.preventDefault(); 
+        bestDealList.classList.add("background2");
+        bestDealList.classList.remove("background1");
+        bestDealList.classList.remove("background3");
+        linkSlider1.classList.remove("slider-default");
+        bckg.classList.add("bckg2");
+        bckg.classList.remove("bckg1");
+        bckg.classList.remove("bckg3");
+      });
+      linkSlider3.addEventListener("click", function (evt) { 
+        evt.preventDefault(); 
+        bestDealList.classList.add("background3");
+        bestDealList.classList.remove("background1");
+        bestDealList.classList.remove("background2");
+        linkSlider1.classList.remove("slider-default");
+        bckg.classList.add("bckg3");
+        bckg.classList.remove("bckg1");
+        bckg.classList.remove("bckg2");
+      });
+    </script>
+
+
     <script>
       var link = document.querySelector(".modal-open");
       var popup = document.querySelector(".modal");
