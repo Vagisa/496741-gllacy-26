@@ -77,6 +77,7 @@ a {
 }
 .site-navigation {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     line-height: 18px;
     margin-top: 14px;
@@ -226,15 +227,15 @@ a.basket-user-navigation {
     list-style: none;
 }
  
-.background1 .best-deal-item:not(:first-child) {
+.bckg1 .best-deal-item:not(:first-child) {
     display: none;
 }
 
-.background2 .best-deal-item:not(:nth-child(2)) {
+.bckg2 .best-deal-item:not(:nth-child(2)) {
     display: none;
 }
 
-.background3 .best-deal-item:not(:nth-child(3)) {
+.bckg3 .best-deal-item:not(:nth-child(3)) {
     display: none;
 }
 

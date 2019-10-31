@@ -6,7 +6,7 @@
           // Создание карты.
           var myMap = new ymaps.Map("map", {
               // Координаты центра карты.
-              center: [59.938631, 30.323055],
+              center: [59.93931499, 30.32940030],
               // Уровень масштабирования.
               zoom: 16 
             },
@@ -55,7 +55,7 @@
         switchActiveSliderButton(evt.target)
       });
       linkSlider3.addEventListener("click", function (evt) { 
-        switchBckgClass("bckg1");
+        switchBckgClass("bckg3");
         switchActiveSliderButton(evt.target)
       });
     
