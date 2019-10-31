@@ -836,7 +836,7 @@ button.slider-default {
 }
 
 .range-legend input {
-    background-color: inherit;
+    background-color: #97aca0;
     border: none;
     width: 30px;
     padding: 0;
