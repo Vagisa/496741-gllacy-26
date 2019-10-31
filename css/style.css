@@ -21,9 +21,6 @@ body.bckg3 {
     background-color: #9d8b84;
 }
 
-:focus {
-    outline: none;
-}
 
 .backlight {
     background-image: url("../img/backlight.png");
@@ -80,7 +77,7 @@ a {
     flex-wrap: wrap;
     list-style: none;
     line-height: 18px;
-    margin-top: 14px;
+    margin-top: 15px;
     margin-left: 10px;
     margin-right: auto;
 }
@@ -130,6 +127,7 @@ a {
 
 .user-navigation {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     font-size: 14px;
     line-height: 16px;
@@ -202,7 +200,7 @@ a.basket-user-navigation {
     font-size: 14px;
     line-height: 16px;
     margin-top: 0;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
 }
 
 .working-hours span {
@@ -271,7 +269,7 @@ a.basket-user-navigation {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -549px;
+    margin-top: -548px;
 }
 
 .button {
@@ -361,7 +359,7 @@ button.slider-default {
     flex-shrink: 0;
     width: 519px;
     min-height: 185px;
-    padding: 16.5px 23px 23px 18px;
+    padding: 16px 23px 23px 18px;
     border-radius: 15px;
     background-repeat: repeat;
 }
@@ -385,7 +383,7 @@ button.slider-default {
 .chocolate  .button {
     padding-top: 10px;
     padding-right: 20px;
-    padding-bottom: 14px;
+    padding-bottom: 15px;
     padding-left: 22px;
     
 }
@@ -398,7 +396,7 @@ button.slider-default {
 
 .stocks p {
     font-size: 18px;
-    margin-top: 15px;
+    margin-top: 17px;
     margin-bottom: 44px;
     padding-left: 1px;
 }
@@ -408,7 +406,7 @@ button.slider-default {
 }
 
 .bestsellers {
-    margin: 30px auto 21px;
+    margin: 30px auto 22px;
     width: 1146px;
 }
 
@@ -552,7 +550,6 @@ button.slider-default {
     list-style: none;
     margin: 0;
     padding: 0;
-    padding-left: 1px;
 }
 
 .advantages-item {
@@ -563,19 +560,18 @@ button.slider-default {
 
 .advantages-item img {
     margin-right: 7px;
-    
     flex-shrink: 0;
 }
 
 .advantages-item p {
-    margin-top: 13px;
-    margin-bottom: 9px;
+    margin-top: 12.5px;
+    margin-bottom: 13px;
 }
 
 
 .advantages > p {
     margin-top: 0;
-    margin-bottom: 8px;
+    margin-bottom: 9px;
     font-size: 24px;
     line-height: 30px;
     font-weight: 500;
@@ -607,7 +603,7 @@ button.slider-default {
 
 .advertising a {
     font-size: 24px;
-    line-height: 29px;
+    line-height: 30px;
     color: #323232;
     background-image: linear-gradient(to bottom, #323232 0%, #323232 100%);
     background-position: 0 1.1em;
@@ -681,7 +677,7 @@ button.slider-default {
     margin-left: 271px;
     width: 252px;
     height: 246px;
-    padding: 28px 25px 31px;
+    padding: 30px 25px 31px;
     border-radius: 15px;
     background-color: #fdfefe;
     color: #323232;
@@ -698,14 +694,14 @@ button.slider-default {
 
 .contacts b {
     display: block;
-    padding-top: 5px;
+    padding-top: 2px;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 23px;
     padding-bottom: 2px;
 }
 
 .contacts .button {
-    margin-top: 24px;
+    margin-top: 26px;
 }
 
 .bread-crumbs {
@@ -746,7 +742,7 @@ button.slider-default {
 
 .page-title {
     margin-top: -1px;
-    margin-bottom: 26px;
+    margin-bottom: 29px;
     font-size: 35px;
     line-height: 41px;
 }
@@ -757,7 +753,7 @@ button.slider-default {
     align-content: space-between;
     flex-wrap: wrap;
     width: 860px;
-    min-height: 133px;
+    min-height: 131px;
     margin-bottom: 35px;
 }
 
@@ -785,9 +781,9 @@ button.slider-default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 36px;
+    height: 34px;
     border: none;
-    padding: 0px 15px;
+    padding: 3px 15px 0px;
     border-radius: 40px;
     background-color: rgba(248, 247, 244, 0.2);
     color: inherit;
@@ -843,6 +839,7 @@ button.slider-default {
     padding: 0;
     color: #ffffff;
     text-align: center;
+    font-weight: 600;
 }
 
 .range-legend span:not(:first-child) {
@@ -926,6 +923,10 @@ button.slider-default {
     padding-right: 16px;
 }
 
+.filter-item-radio a {
+    color: inherit;
+}
+
 .filter-item-radio label:last-child {
     padding-right: 0;
 }
@@ -937,21 +938,22 @@ button.slider-default {
     height: 15px;
     top: -3px;
     left: 0px;
-    border: 4px solid rgba(255, 255, 255, 0.8);
+    border: 4px solid rgb(255, 255, 255);
     border-radius: 50%;
+    opacity: 0.8;
 }
 
 
 .filter-input-radio:checked + label::after  {
     content: "";
-
     position: absolute;
     top: 4px;
     left: 7px;
     width: 9px;
     height: 9px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgb(255, 255, 255);
+    opacity: 0.8;
 }
 
 .filter-checkbox legend {
@@ -983,6 +985,7 @@ button.slider-default {
     background-image: url("../img/checkbox-off.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+    opacity: 0.8;
 }
 
 .filter-input-checkbox:checked + label::before  {
@@ -992,8 +995,35 @@ button.slider-default {
     background-image: url("../img/checkbox-on.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+    opacity: 0.8;
 }
 
+.filter-item-radio label:hover::before,
+.filter-input-radio:focus + label::before,
+.filter-item-radio label:hover::after,
+.filter-input-radio:focus + label::after,
+.filter-item-checkbox label:hover::before,
+.filter-input-checkbox:focus + label::before,
+.filter-item-checkbox label:hover::after,
+.filter-input-checkbox:focus + label::after {
+    opacity: 1;
+}
+
+
+.filter-item-radio input:disabled + label::before,
+.filter-item-radio input:disabled + label::after,
+.filter-item-checkbox input:disabled + label::before,
+.filter-item-checkbox input:disabled + label::after {
+    opacity: 0.4;
+}
+
+.filter-input-radio:focus + label::before,
+.filter-input-checkbox:focus + label::before {
+    outline-color: rgb(77, 144, 254);
+    outline-offset: -2px;
+    outline-style: auto;
+    outline-width: 5px;
+}
 
 .filter-button  {
     width: 145px;
