@@ -786,7 +786,7 @@ button.slider-default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 34px;
+    min-height: 34px;
     border: none;
     padding: 3px 15px 0px;
     border-radius: 40px;
@@ -913,9 +913,13 @@ button.slider-default {
 }
 
 .filter-item-radio {
-    width: 387px;
+    justify-content: flex-start;
+    min-width: 387px;
+
     margin-right: 0;
+    padding-top: 0px;
     padding-left: 13px;
+    flex-wrap: wrap;
 }
 
 .filter-radio legend {
@@ -926,6 +930,9 @@ button.slider-default {
     position: relative;
     padding-left: 33px;
     padding-right: 16px;
+    
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .filter-item-radio a {
@@ -941,7 +948,7 @@ button.slider-default {
     position: absolute;
     width: 15px;
     height: 15px;
-    top: -3px;
+    top: 2px;
     left: 0px;
     border: 4px solid rgb(255, 255, 255);
     border-radius: 50%;
@@ -952,7 +959,7 @@ button.slider-default {
 .filter-input-radio:checked + label::after  {
     content: "";
     position: absolute;
-    top: 4px;
+    top: 9px;
     left: 7px;
     width: 9px;
     height: 9px;
@@ -966,13 +973,19 @@ button.slider-default {
 }
 
 .filter-item-checkbox {
-    width: 670px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    min-width: 670px;
+    padding-top: 0px;
     padding-right: 17px;
 }
 
 .filter-item-checkbox label {
     position: relative;
     padding-left: 33px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 19.5px;
 }
 
 .filter-item-checkbox label:last-child {
@@ -985,7 +998,7 @@ button.slider-default {
     width: 21px;
     height: 21px;
     padding-right: 4px;
-    top: -2px;
+    top: 3px;
     left: 0px;
     background-image: url("../img/checkbox-off.svg");
     background-repeat: no-repeat;
