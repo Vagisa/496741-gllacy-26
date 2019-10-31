@@ -51,8 +51,8 @@ a {
 
 .main-header {
     display: flex;
-    min-height: 120px;
     flex-direction: column;
+    min-height: 120px;
 }
 
 .main-navigation {
@@ -64,7 +64,6 @@ a {
 
 .main-navigation ul {
     padding-left: 0;
-    
     z-index: 2;
 }
 
@@ -75,11 +74,11 @@ a {
 .site-navigation {
     display: flex;
     flex-wrap: wrap;
-    list-style: none;
-    line-height: 18px;
     margin-top: 15px;
     margin-left: 10px;
     margin-right: auto;
+    list-style: none;
+    line-height: 18px;
 }
 
 .site-navigation-button {
@@ -189,18 +188,17 @@ a.basket-user-navigation {
 }
 .working-hours {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;align-items: flex-end;
     height: 40px;
     margin-left: auto; 
     padding-bottom: 1px;
-    align-items: flex-end;
 }
 
 .working-hours p {
-    font-size: 14px;
-    line-height: 16px;
     margin-top: 0;
     margin-bottom: 3px;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 .working-hours span {
@@ -225,25 +223,18 @@ a.basket-user-navigation {
     list-style: none;
 }
  
-.bckg1 .best-deal-item:not(:first-child) {
-    display: none;
-}
-
-.bckg2 .best-deal-item:not(:nth-child(2)) {
-    display: none;
-}
-
+.bckg1 .best-deal-item:not(:first-child),
+.bckg2 .best-deal-item:not(:nth-child(2)),
 .bckg3 .best-deal-item:not(:nth-child(3)) {
     display: none;
 }
 
-
 .best-deal-list h3 {
     width: 675px;
-    font-size: 60px;
-    line-height: 100.5%;
     margin-bottom: 29.5px;
     padding: 0;
+    font-size: 60px;
+    line-height: 100.5%;
 }
 
 .best-deal-item  img {
@@ -273,21 +264,20 @@ a.basket-user-navigation {
 }
 
 .button {
+    z-index: 1;
     display: flex;
     justify-content: center;
     font-size: 18px;
     font-weight: 700;
     padding: 13px 22px;;
     background-color: rgb(231,74,53);
-    background-image: 
-                linear-gradient( 90deg, rgb(231,74,53) 0%, 
-                rgb(242,104,67) 100%);
+    background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, 
+                                              rgb(242,104,67) 100%);
     border: none;
     border-radius: 40px;
     box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
     text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
     color: rgb(255, 255, 255);
-    z-index: 1;
     cursor: pointer;
 }
 
@@ -311,20 +301,20 @@ a.basket-user-navigation {
 
 .slider {
     position: absolute;
-    display: flex;
-    list-style: none;
-    z-index: 1;
     top: 423px;
     left: -19px;
+    z-index: 1;
+    display: flex;
+    list-style: none;
 }
 
 .slider button{
     width: 20px;
     height: 20px;
+    margin: 5px;
     background-color: transparent;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 50%;
-    margin: 5px;
     cursor: pointer;
 }
 
@@ -342,8 +332,8 @@ button.slider-default {
 
 .stocks-container {
     position: relative;
-    margin-top: 2px;
     z-index: 1;
+    margin-top: 2px;
 }
 
 .stocks {
@@ -378,7 +368,7 @@ button.slider-default {
 }
 
 .chocolate {
-    background-image: url("../img/Chocolate-bckg.jpg");
+    background-image: url("../img/сhocolate-bckg.jpg");
     background-position: -220px -105px;
     background-color: #35190b;
 }
@@ -386,7 +376,7 @@ button.slider-default {
 .chocolate  .button {
     padding-top: 10px;
     padding-right: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 17px;
     padding-left: 22px;
     
 }
@@ -399,7 +389,7 @@ button.slider-default {
 
 .stocks p {
     font-size: 18px;
-    margin-top: 15px;
+    margin-top: 16px;
     margin-bottom: 44px;
     padding-left: 1px;
 }
@@ -426,7 +416,7 @@ button.slider-default {
 .main-catalog .product-list {
     width: 1146px;
     min-height: 1086px;
-    margin: -6px auto 0px;
+    margin: -5px auto 0px;
 }
 
 
@@ -542,7 +532,7 @@ button.slider-default {
     background-image: url("../img/wafer-bckg.png");
     background-position: -2px 3px;
     font-weight: 400;
-    padding: 25px 25px 11px 20px;
+    padding: 26px 25px 10px 20px;
     margin: -1px auto 40px;
 }
 
@@ -568,7 +558,7 @@ button.slider-default {
 
 .advantages-item p {
     margin-top: 13px;
-    margin-bottom: 9px;
+    margin-bottom: 11px;
 }
 
 
@@ -602,7 +592,7 @@ button.slider-default {
     font-size: 16px;
     font-weight: 500;
     margin-top: 0;
-    margin-bottom: 4px;  
+    margin-bottom: 5px;  
 }
 
 .advertising a {
@@ -610,7 +600,7 @@ button.slider-default {
     line-height: 30px;
     color: #323232;
     background-image: linear-gradient(to bottom, #323232 0%, #323232 100%);
-    background-position: 0 1.1em;
+    background-position: 0 1.05em;
     background-repeat: repeat-x;
     background-size: 10px 2px;
 }
@@ -669,7 +659,7 @@ button.slider-default {
     position: relative;
     margin: 40px 0 7px;
     min-height: 429px;
-    background-image: url("../img/Layer-3.jpg");
+    background-image: url("../img/layer-3.jpg");
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -1057,13 +1047,13 @@ button.slider-default {
 }
 
 .pagination {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
     width: 1166px;
     margin: 45px auto 6px;
     padding: 7px 17px 30px;
     margin-top: 45px;
-
-    display: flex;
-    justify-content: flex-end;
     list-style: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -1081,9 +1071,21 @@ button.slider-default {
     margin-right: 2px;
 }
 
+
+.pagination-item:first-child a,
+.pagination-item:last-child a {
+    width: 27px;
+    height: 26px;
+    position: relative;
+}
+
 .pagination-item:first-child a::before {
     position: absolute;
     content: "";
+    top: 50%;
+    left: 50%;
+    margin-top: -6px;
+    margin-left: -6px;
     width: 8px;
     height: 8px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
@@ -1099,6 +1101,10 @@ button.slider-default {
 .pagination-item:last-child a::before {
     position: absolute;
     content: "";
+    top: 50%;
+    left: 50%;
+    margin-top: -4px;
+    margin-left: -4px;
     width: 8px;
     height: 8px;
     border-bottom: 2px solid #fefefe;

@@ -3,25 +3,25 @@
       // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
       ymaps.ready(init);
       function init(){
-          // Создание карты.
-          var myMap = new ymaps.Map("map", {
-              // Координаты центра карты.
-              center: [59.93931499, 30.32940030],
-              // Уровень масштабирования.
-              zoom: 16 
-            },
-              {
-                searchControlPointer: "yandex#search"
-              });
-            var myPlacemark = new ymaps.Placemark([59.938631, 30.323055], {}, {
-              cursor: "arrow",
-              iconLayout: 'default#image',
-              iconImageHref: 'img/Pin.png',
-              iconImageSize: [218, 142],
-              iconImageOffset: [-40, -139]
-          });
-          myMap.geoObjects.add(myPlacemark);
-        };
+        // Создание карты.
+        var myMap = new ymaps.Map("map", {
+          // Координаты центра карты.
+          center: [59.93931499, 30.32940030],
+          // Уровень масштабирования.
+          zoom: 16
+        },
+        {
+          searchControlPointer: "yandex#search"
+        });
+        var myPlacemark = new ymaps.Placemark([59.938631, 30.323055], {}, {
+          cursor: "arrow",
+          iconLayout: "default#image",
+          iconImageHref: "img/pin.png",
+          iconImageSize: [218, 142],
+          iconImageOffset: [-40, -139]
+        });
+        myMap.geoObjects.add(myPlacemark);
+      };
 
 
 
