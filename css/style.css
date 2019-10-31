@@ -502,7 +502,7 @@ button.slider-default {
 }
 
 .main-catalog .product-item:last-child p {
-    left: -2px;
+    left: 8px;
 }
 
 
@@ -745,7 +745,7 @@ button.slider-default {
 
 .page-title {
     margin-top: -1px;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
     font-size: 35px;
     line-height: 41px;
 }
@@ -757,7 +757,7 @@ button.slider-default {
     flex-wrap: wrap;
     width: 860px;
     min-height: 133px;
-    margin-bottom: 36px;
+    margin-bottom: 35px;
 }
 
 .filter fieldset {
@@ -770,9 +770,10 @@ button.slider-default {
 }
 
 .filter legend {
-    padding-bottom: 7px;
+    padding-bottom: 6px;
     font-size: 14px;
     line-height: 16px;
+    font-weight: 600;
 }
 
 .filter label {
@@ -791,6 +792,7 @@ button.slider-default {
     color: inherit;
     font-size: 16px;
     line-height: 18px;
+    font-weight: 600;
 }
 
 .filter-select legend {
@@ -830,7 +832,20 @@ button.slider-default {
 }
 
 .filter-range legend {
-    padding-left: 21px;
+    padding-left: 20px;
+}
+
+.range-legend input {
+    background-color: inherit;
+    border: none;
+    width: 30px;
+    padding: 0;
+    color: #ffffff;
+    text-align: center;
+}
+
+.range-legend span:not(:first-child) {
+    margin-right: 4px;
 }
 
 .filter-range .filter-item {
@@ -981,9 +996,10 @@ button.slider-default {
 
 .filter-button  {
     width: 145px;
-    height: 35px;
+    height: 36px;
     margin-top: auto;
     margin-right: 0;
+    margin-bottom: 1px;
     padding: 7px 15px;
     border: 2px solid #ffffff;
     border-radius: 40px;
