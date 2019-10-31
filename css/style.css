@@ -363,7 +363,7 @@ button.slider-default {
     background-color: #8e0220;
 }
 
-.raspberry  .button {
+.raspberry .button {
     padding: 10px 22px 14px 22px;
 }
 
@@ -373,12 +373,11 @@ button.slider-default {
     background-color: #35190b;
 }
 
-.chocolate  .button {
+.chocolate .button {
     padding-top: 10px;
     padding-right: 20px;
     padding-bottom: 17px;
     padding-left: 22px;
-    
 }
 
 .stocks h3 {
@@ -561,7 +560,6 @@ button.slider-default {
     margin-bottom: 11px;
 }
 
-
 .advantages > p {
     margin-top: 0;
     margin-bottom: 8px;
@@ -576,7 +574,9 @@ button.slider-default {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
 }
+
 .advertising {
     width: 520px;
     min-height: 161px;
@@ -714,7 +714,7 @@ button.slider-default {
     padding: 0;
 }
 
-.bread-crumbs a{
+.bread-crumbs a {
     color: #ffffff;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     margin-right: -5px;
@@ -807,7 +807,7 @@ button.slider-default {
 
 .filter-item-select::-ms-expand {
     display: none;
-  }
+}
 
 .filter-item-select:hover,
 .filter-item-select:focus {
@@ -854,20 +854,17 @@ button.slider-default {
 .range-controls .scale {
     height: 4px;
     width: 153px;
-    
     padding-left: 23px;
     background-color: rgba(248, 247, 244, 0.5);
 }
 
 .range-controls .bar {
-
     width: 100px;
     height: 4px;
     background-color: rgba(248, 247, 244, 1);
 }
 
 .range-toggle {
-    
     position: absolute;
     width: 4px;
     height: 4px;
@@ -880,17 +877,16 @@ button.slider-default {
 
 .range-toggle-min {
     left: 35px;
-  }
+}
   
   .range-toggle-max {
     left: 133px;
-  }
+}
 
 .visually-hidden:not(:focus):not(:active) input,
 .visually-hidden input[type="checkbox"],
 .visually-hidden input[type="radio"] {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -905,7 +901,6 @@ button.slider-default {
 .filter-item-radio {
     justify-content: flex-start;
     min-width: 387px;
-
     margin-right: 0;
     padding-top: 0px;
     padding-left: 13px;
@@ -920,7 +915,6 @@ button.slider-default {
     position: relative;
     padding-left: 33px;
     padding-right: 16px;
-    
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -946,7 +940,7 @@ button.slider-default {
 }
 
 
-.filter-input-radio:checked + label::after  {
+.filter-input-radio:checked + label::after {
     content: "";
     position: absolute;
     top: 9px;
@@ -1265,7 +1259,6 @@ button.slider-default {
 }
 
 .hidden-popup {
-    
     position: absolute;
     display: none;
     padding-top: 12px;
@@ -1285,8 +1278,6 @@ button.slider-default {
     width: 143px;
     min-height: 171px;
 }
-
-
 
 .item-user-navigation {
     position: relative;
@@ -1327,7 +1318,6 @@ button.slider-default {
     padding: 20px 15px;
 }
 
-
 .pop-up .one-column-popap {
     padding: 0;
     padding-bottom: 7px;
@@ -1350,9 +1340,9 @@ button.slider-default {
 }
 
 .item-site-navigation:hover .hidden-popup,
-.site-navigation-button a:focus .hidden-popup,
+a:focus + .hidden-popup,
 .item-user-navigation:hover .hidden-popup,
-.user-navigation-button a:focus .hidden-popup {
+a:focus ~ .hidden-popup {
     display: block;
 }
 
