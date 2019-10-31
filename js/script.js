@@ -1,5 +1,4 @@
-
-      // Функция ymaps.ready() будет вызвана, когда
+// Функция ymaps.ready() будет вызвана, когда
       // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
       ymaps.ready(init);
       function init(){
@@ -22,10 +21,8 @@
         });
         myMap.geoObjects.add(myPlacemark);
       };
+      
 
-
-
-   
       var linkSlider1 = document.querySelector(".slider-switch1");
       var linkSlider2 = document.querySelector(".slider-switch2");
       var linkSlider3 = document.querySelector(".slider-switch3");
@@ -58,10 +55,8 @@
         switchBckgClass("bckg3");
         switchActiveSliderButton(evt.target)
       });
-    
+      
 
-
-    
       var link = document.querySelector(".modal-open");
       var popup = document.querySelector(".modal");
       var overlay = document.querySelector(".without-overlay");
