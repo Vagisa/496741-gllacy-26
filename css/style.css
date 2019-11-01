@@ -416,7 +416,6 @@ button.slider-default {
     margin: -6px auto 0px;
 }
 
-
 .product-item {
     position: relative;
     width: 267px;
@@ -424,7 +423,7 @@ button.slider-default {
     box-sizing: border-box;
 }
 
-.product-item a {
+.hideaway {
     position: absolute;
     left: -10px;
     display: flex;
@@ -436,7 +435,7 @@ button.slider-default {
     margin: auto;
 }
 
-.product-item a:hover {
+.hideaway:hover {
     border-radius: 5px;
     background-color: rgba(248, 247, 244, 0.2);
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.08);
@@ -457,12 +456,11 @@ button.slider-default {
 
 .product-item figcaption {
     position: relative;
-    width: 100%;
     padding: 0;
     min-height: 67px;
 }
 
-.product-item .button{
+.product-item .button {
     display: none;
     margin-bottom: 22px;
     padding: 11px 17px 12px;
@@ -471,6 +469,7 @@ button.slider-default {
 .product-item:hover .button {
     display: block;
 }
+
 .product-item img:first-child {
     padding-top: 10px;
 }
@@ -489,11 +488,16 @@ button.slider-default {
     left: 8.5px;
     word-spacing: -7px;
 }
-
+/*
+Лучше было бы написать так, но по критериям нельзя больше двух селекторов применять
 .main-catalog .product-item:last-child p {
-    left: 8px;
+    left: -5px;
 }
+*/
 
+p.personal {
+    left: -5px;
+}
 
 .product-list span {
     font-size: 30px; 
@@ -511,14 +515,10 @@ button.slider-default {
     margin-bottom: 10px;
 }
 
-.product-item h3:hover {
+.product-item h3:hover,
+.hideaway:focus h3 {
     color: #ffbc9e;
 }
-
-.product-item a:focus h3 {
-    color: #ffbc9e;
-}
-
 
 .advantages {
     width: 1101px;
