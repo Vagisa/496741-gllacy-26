@@ -325,10 +325,10 @@ a.basket-user-navigation {
     font-weight: 700;
     padding: 13px 22px;;
     background-color: rgb(231,74,53);
-    background-image: -webkit-gradient( linear, left top, right top, from(rgb(231,74,53)), 
-                                              to(rgb(242,104,67)));
     background-image: -o-linear-gradient( left, rgb(231,74,53) 0%, 
                                               rgb(242,104,67) 100%);
+    background-image: -webkit-gradient( linear, left top, right top, from(rgb(231,74,53)), 
+                                              to(rgb(242,104,67)));
     background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, 
                                               rgb(242,104,67) 100%);
     border: none;
@@ -351,10 +351,10 @@ a.basket-user-navigation {
 }
 
 .button:focus {
-    background-image: -webkit-gradient( linear, left top, right top, from(rgb(242,104,67)),
-     to(rgb(231,74,53)));
     background-image: -o-linear-gradient( left, rgb(242,104,67) 0%,
      rgb(231,74,53) 100%);
+    background-image: -webkit-gradient( linear, left top, right top, from(rgb(242,104,67)),
+     to(rgb(231,74,53)));
     background-image: linear-gradient( 90deg, rgb(242,104,67) 0%,
      rgb(231,74,53) 100%);
     -webkit-box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.64);
@@ -722,8 +722,8 @@ p.personal {
     font-size: 24px;
     line-height: 30px;
     color: #323232;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#323232), to(#323232));
     background-image: -o-linear-gradient(top, #323232 0%, #323232 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#323232), to(#323232));
     background-image: linear-gradient(to bottom, #323232 0%, #323232 100%);
     background-position: 0 1.05em;
     background-repeat: repeat-x;
@@ -732,8 +732,8 @@ p.personal {
 
 .advertising a:hover {
     color: #e84d37;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#e84d37), to(#e84d37));
     background-image: -o-linear-gradient(top, #e84d37 0%, #e84d37 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e84d37), to(#e84d37));
     background-image: linear-gradient(to bottom, #e84d37 0%, #e84d37 100%);
 }
 
@@ -1202,12 +1202,29 @@ p.personal {
     height: 36px;
     margin-top: auto;
     margin-right: 0;
-    margin-bottom: 1px;
-    padding: 7px 15px;
+    margin-bottom: -1px;
+    padding: 7px 15px 8px;
     border: 2px solid #ffffff;
     border-radius: 40px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 600;
     color: #ffffff;
     background-color: rgba(248, 247, 244, 0.2);
+    cursor: pointer;
+}
+
+.filter-button:hover {
+    color: #323232;
+    background-color: rgb(255, 255, 255);
+}
+
+.filter-button:active {
+    color: #323232;
+    background-color: rgb(237, 237, 237);
+    border: none;
+    -webkit-box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.2);
+            box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.2);  
 }
 
 .pagination {
